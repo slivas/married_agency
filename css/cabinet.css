@@ -802,6 +802,7 @@ textarea:focus:-ms-input-placeholder      {
 }
 .cabinet__main__header__btn-filter-wrapper > * {
     display: inline-block;
+    vertical-align: top;
 }
 .cabinet__main__header__btn-filter button,
 .cabinet__main__header__search-wrapper {
@@ -1137,10 +1138,20 @@ textarea.edit-main__adress {
 .cabinet__photos__create-album.cabinet-shadow {
     background-color: #fff;
     padding: 8px 15px;
-    vertical-align: top;
 }
-
-
+.cabinet__photos__albums .btn-group > button {
+    background-color: #fff;
+    border: 0 none;
+    padding: 8px;
+}
+.cabinet__photos__albums .btn-group > button > span:first-child {
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 88px;
+}
 
 
 
