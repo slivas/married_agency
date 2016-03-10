@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cabinet</title>
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-datepicker.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/cabinet.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+</head>
+<body class="cabinet">          <!--добавить класс страницы-->
+<div class="wrapper">
+    <header class="custom">
+        <div class="container-fluid">
+            <div class="header-menu">
+                <div class="header-menu__logo">
+                    <h1>
+                        <a href="/ru">WEDDING
+                            <span class="and">&amp;</span>
+                            EVENT
+                            <span class="planner">PLANNER</span>
+                        </a>
+                    </h1>
+                </div>
+                <div class="header-menu__menu">
+                    <ul class="main-menu">
+                        <li>
+                            <a href="/ru/about/">About</a>
+                        </li>
+                        <li>
+                            <a href="/ru/catalog/">Catalog</a>
+                        </li>
+                        <li class="active">
+                            <a href="/ru/ideas/">Ideas</a>
+                        </li>
+                        <li>
+                            <a href="/ru/news/">News</a>
+                        </li>
+                        <li>
+                            <a href="/forum/">Forum</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header-menu__buttons">
+                            <span>
+                                <div class="dropdown">
+                                    <input name="lang" type="hidden">
+                                    <a id="lang" data-toggle="dropdown" role="button" href="#">Ru
+                                        <span class="caret"></span>
+                                    </a>
+                                    <!--<ul class="dropdown-menu" role="menu" aria-labelledby="lang">-->
+                                    <!--<a href="#">Ru</a>-->
+                                    <!--<a href="#">En</a>-->
+                                    <!--</ul>-->
+                                </div>
+                            </span>
+                                <span class="login">
+                                    <div class="login-img"><img src="img/login.png" alt=""></div>
+                                    <a href="#">LogIn</a>
+                                </span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="cabinet__content clearfix">
+        <aside class="cabinet__users-menu">
+            <section class="cabinet__users-menu__avatar">
+                <i class="cabinet__users-menu__avatar-trash pointer"></i>
+            </section>
+            <section class="cabinet__users-menu__info text-center">
+                <div>Name Surname</div>
+                <div>Presenter</div>
+                <div>mail@mail.com</div>
+            </section>
+            <section class="cabinet__users-menu__rating text-center">
+                <span class="cabinet__users-menu__rating-star active"></span>
+                <span class="cabinet__users-menu__rating-star active"></span>
+                <span class="cabinet__users-menu__rating-star active"></span>
+                <span class="cabinet__users-menu__rating-star"></span>
+                <span class="cabinet__users-menu__rating-star"></span>
+            </section>
+            <section class="cabinet__users-menu__user-actions">
+                <ul>
+                    <li>
+                        <a class="cabinet__users-menu__user-actions-edit" href="#">Edit personal page</a>
+                    </li>
+                    <li>
+                        <a class="cabinet__users-menu__user-actions-transition" href="#">Go to your page</a>
+                    </li>
+                </ul>
+            </section>
+            <section class="cabinet__users-menu__user-categories">
+                <ul>
+                    <li>
+                        <a href="" class="cabinet__users-menu__user-category-dashboard">Dashboard</a>
+                    </li>
+                    <li class="active">
+                        <a href="" class="cabinet__users-menu__user-category-bookmarks">Bookmarks</a>
+                    </li>
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" class="cabinet__users-menu__user-category-media" href="#">Media</a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Audio</a></li>
+                            <li><a href="#">Video</a></li>
+                            <li><a href="#">Photos</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="" class="cabinet__users-menu__user-category-notifications">Notifications</a>
+                    </li>
+                    <li>
+                        <a href="" class="cabinet__users-menu__user-category-messages">Messages</a>
+                    </li>
+                    <li>
+                        <a href="" class="cabinet__users-menu__user-category-statistics">Statistics</a>
+                    </li>
+                    <li>
+                        <a href="" class="cabinet__users-menu__user-category-forum">Forum</a>
+                    </li>
+                </ul>
+            </section>
+            <section class="cabinet__users-menu__user-settings">
+                <ul>
+                    <li>
+                        <a href="" class="cabinet__users-menu__user-settings__settings">Settings</a>
+                    </li>
+                    <li>
+                        <a href="" class="cabinet__users-menu__user-settings__reset-pass">Reset Password</a>
+                    </li>
+                </ul>
+            </section>
+            <section class="cabinet__users-menu__user-subscribe">
+                <input type="checkbox" class="checkbox" id="checkbox" checked="checked" />
+                <label for="checkbox">Subscribe</label>
+            </section>
+        </aside>
+        <article>
+            <section class="cabinet__top-info-panel">
+                <ol class="breadcrumb">
+                    <li><a href="#">Account </a></li>
+                    <li class="active">Bookmarks</li>
+                </ol>
+                <div class="cabinet__top-info-panel_disc-space">
+                    <div class="cabinet__top-info-panel__disc-space__text-info">
+                        <div>
+                            <span>1</span>
+                            Gb
+                        </div>
+                        <div>/</div>
+                        <div>
+                            <span>4</span>
+                            Gb
+                        </div>
+                    </div>
+                    <div class="cabinet__top-info-panel__disc-space__progress-bar">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="cabinet__top-info-panel__message-block">
+                    <div class="cabinet__top-info-panel__message-block__mail-info">
+                        <div>
+                            <span>3</span>
+                        </div>
+                    </div>
+                    <div class="cabinet__top-info-panel__message-block__messages-info">
+                        <div>
+                            <span>1</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cabinet__top-info-panel__message-block__date-time">
+                    <span>17:09</span>
+                    <span>Ukraine</span>
+                    <span>UTC+2</span>
+                </div>
+                <div class="cabinet__top-info-panel__tariff">
+                    <span>Tariff</span>
+                    <span>:</span>
+                    <span><strong>Basic</strong></span>
+                </div>
+            </section>
+            <section class="row cabinet__main">
+                <div class="col-xs-9 no-padding">
+                    <div class="cabinet__main__header clearfix">
+                        <h1>Bookmarks</h1>
+                        <div class="bookmarks__header-info">
+                            <span>87</span>
+                            <span>
+                                displayed
+                                <span>6</span>
+                            </span>
+                        </div>
+                        <div class="cabinet__main__header__btn-filter-wrapper pull-right">
+                            <div class="btn-group cabinet__main__header__btn-filter">
+                                <button type="button" class="modal__add-event__city cabinet-shadow" data-toggle="dropdown">
+                                    All categories
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">Category 1</a></li>
+                                    <li><a href="#">Category 2</a></li>
+                                    <li><a href="#">Category 3</a></li>
+                                </ul>
+                            </div>
+                            <div class="btn-group cabinet__main__header__btn-filter">
+                                <button type="button" class="modal__add-event__city cabinet-shadow" data-toggle="dropdown">
+                                    All cities
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">City 1</a></li>
+                                    <li><a href="#">City 2</a></li>
+                                    <li><a href="#">City 3</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cabinet__main-content bookmarks-main">
+                        <div class="row">
+                            <div class="col-xs-4">
+                                <div class="thumbnail cabinet-shadow">
+                                    <div class="bookmarks-thumbnail-close pointer">
+                                        <img src="img/close-ico-bookmarks.png" alt=""/>
+                                    </div>
+                                    <img src="img/bookmarks-img1.png" alt="...">
+                                    <div class="caption clearfix">
+                                        <h4>Bontempi</h4>
+                                        <span class="bookmarks-main__thumbnail-place pull-left">Restaurant, Moscow</span>
+                                        <span class="bookmarks-main__stars-rating-wrapper pull-right">
+                                            <span class="bookmarks-main__stars-rating__active"></span>
+                                            <span class="bookmarks-main__stars-rating__active"></span>
+                                            <span class="bookmarks-main__stars-rating__active"></span>
+                                            <span class="bookmarks-main__stars-rating__not-active"></span>
+                                            <span class="bookmarks-main__stars-rating__not-active"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-4">
+                                <div class="thumbnail cabinet-shadow">
+                                    <div class="bookmarks-thumbnail-close pointer">
+                                        <img src="img/close-ico-bookmarks.png" alt=""/>
+                                    </div>
+                                    <img src="img/bookmarks-img2.png" alt="...">
+                                    <div class="caption clearfix">
+                                        <h4>Bontempi</h4>
+                                        <span class="bookmarks-main__thumbnail-place pull-left">Restaurant, Moscow</span>
+                                        <span class="bookmarks-main__stars-rating-wrapper pull-right">
+                                            <span class="bookmarks-main__stars-rating__active"></span>
+                                            <span class="bookmarks-main__stars-rating__active"></span>
+                                            <span class="bookmarks-main__stars-rating__active"></span>
+                                            <span class="bookmarks-main__stars-rating__not-active"></span>
+                                            <span class="bookmarks-main__stars-rating__not-active"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-4">
+                                <div class="thumbnail cabinet-shadow">
+                                    <div class="bookmarks-thumbnail-close pointer">
+                                        <img src="img/close-ico-bookmarks.png" alt=""/>
+                                    </div>
+                                    <img src="img/bookmarks-img3.png" alt="...">
+                                    <div class="caption clearfix">
+                                        <h4>Bontempi</h4>
+                                        <span class="bookmarks-main__thumbnail-place pull-left">Restaurant, Moscow</span>
+                                        <span class="bookmarks-main__stars-rating-wrapper pull-right">
+                                            <span class="bookmarks-main__stars-rating__active"></span>
+                                            <span class="bookmarks-main__stars-rating__active"></span>
+                                            <span class="bookmarks-main__stars-rating__active"></span>
+                                            <span class="bookmarks-main__stars-rating__not-active"></span>
+                                            <span class="bookmarks-main__stars-rating__not-active"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-4">
+                                <div class="thumbnail cabinet-shadow">
+                                    <div class="bookmarks-thumbnail-close pointer">
+                                        <img src="img/close-ico-bookmarks.png" alt=""/>
+                                    </div>
+                                    <img src="img/bookmarks-img1.png" alt="...">
+                                    <div class="caption clearfix">
+                                        <h4>Bontempi</h4>
+                                        <span class="bookmarks-main__thumbnail-place pull-left">Restaurant, Moscow</span>
+                                        <span class="bookmarks-main__stars-rating-wrapper pull-right">
+                                            <span class="bookmarks-main__stars-rating__active"></span>
+                                            <span class="bookmarks-main__stars-rating__active"></span>
+                                            <span class="bookmarks-main__stars-rating__active"></span>
+                                            <span class="bookmarks-main__stars-rating__not-active"></span>
+                                            <span class="bookmarks-main__stars-rating__not-active"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-4">
+                                <div class="thumbnail cabinet-shadow">
+                                    <div class="bookmarks-thumbnail-close pointer">
+                                        <img src="img/close-ico-bookmarks.png" alt=""/>
+                                    </div>
+                                    <img src="img/bookmarks-img2.png" alt="...">
+                                    <div class="caption clearfix">
+                                        <h4>Bontempi</h4>
+                                        <span class="bookmarks-main__thumbnail-place pull-left">Restaurant, Moscow</span>
+                                        <span class="bookmarks-main__stars-rating-wrapper pull-right">
+                                            <span class="bookmarks-main__stars-rating__active"></span>
+                                            <span class="bookmarks-main__stars-rating__active"></span>
+                                            <span class="bookmarks-main__stars-rating__active"></span>
+                                            <span class="bookmarks-main__stars-rating__not-active"></span>
+                                            <span class="bookmarks-main__stars-rating__not-active"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-4">
+                                <div class="thumbnail cabinet-shadow">
+                                    <div class="bookmarks-thumbnail-close pointer">
+                                        <img src="img/close-ico-bookmarks.png" alt=""/>
+                                    </div>
+                                    <img src="img/bookmarks-img3.png" alt="...">
+                                    <div class="caption clearfix">
+                                        <h4>Bontempi</h4>
+                                        <span class="bookmarks-main__thumbnail-place pull-left">Restaurant, Moscow</span>
+                                        <span class="bookmarks-main__stars-rating-wrapper pull-right">
+                                            <span class="bookmarks-main__stars-rating__active"></span>
+                                            <span class="bookmarks-main__stars-rating__active"></span>
+                                            <span class="bookmarks-main__stars-rating__active"></span>
+                                            <span class="bookmarks-main__stars-rating__not-active"></span>
+                                            <span class="bookmarks-main__stars-rating__not-active"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-4">
+                                <div class="thumbnail cabinet-shadow">
+                                    <div class="bookmarks-thumbnail-close pointer">
+                                        <img src="img/close-ico-bookmarks.png" alt=""/>
+                                    </div>
+                                    <img src="img/bookmarks-img1.png" alt="...">
+                                    <div class="caption clearfix">
+                                        <h4>Bontempi</h4>
+                                        <span class="bookmarks-main__thumbnail-place pull-left">Restaurant, Moscow</span>
+                                        <span class="bookmarks-main__stars-rating-wrapper pull-right">
+                                            <span class="bookmarks-main__stars-rating__active"></span>
+                                            <span class="bookmarks-main__stars-rating__active"></span>
+                                            <span class="bookmarks-main__stars-rating__active"></span>
+                                            <span class="bookmarks-main__stars-rating__not-active"></span>
+                                            <span class="bookmarks-main__stars-rating__not-active"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-4">
+                                <div class="thumbnail cabinet-shadow">
+                                    <div class="bookmarks-thumbnail-close pointer">
+                                        <img src="img/close-ico-bookmarks.png" alt=""/>
+                                    </div>
+                                    <img src="img/bookmarks-img2.png" alt="...">
+                                    <div class="caption clearfix">
+                                        <h4>Bontempi</h4>
+                                        <span class="bookmarks-main__thumbnail-place pull-left">Restaurant, Moscow</span>
+                                        <span class="bookmarks-main__stars-rating-wrapper pull-right">
+                                            <span class="bookmarks-main__stars-rating__active"></span>
+                                            <span class="bookmarks-main__stars-rating__active"></span>
+                                            <span class="bookmarks-main__stars-rating__active"></span>
+                                            <span class="bookmarks-main__stars-rating__not-active"></span>
+                                            <span class="bookmarks-main__stars-rating__not-active"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-4">
+                                <div class="thumbnail cabinet-shadow">
+                                    <div class="bookmarks-thumbnail-close pointer">
+                                        <img src="img/close-ico-bookmarks.png" alt=""/>
+                                    </div>
+                                    <img src="img/bookmarks-img3.png" alt="...">
+                                    <div class="caption clearfix">
+                                        <h4>Bontempi</h4>
+                                        <span class="bookmarks-main__thumbnail-place pull-left">Restaurant, Moscow</span>
+                                        <span class="bookmarks-main__stars-rating-wrapper pull-right">
+                                            <span class="bookmarks-main__stars-rating__active"></span>
+                                            <span class="bookmarks-main__stars-rating__active"></span>
+                                            <span class="bookmarks-main__stars-rating__active"></span>
+                                            <span class="bookmarks-main__stars-rating__not-active"></span>
+                                            <span class="bookmarks-main__stars-rating__not-active"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <aside class="col-xs-3 no-padding cabinet__right-column">
+                    <div class="calendar cabinet-shadow"></div>
+                    <div class="cabinet__main__events-wrapper cabinet-shadow">
+                        <div class="cabinet__main__grey-header">
+                            <div>Messages</div>
+                            <div>Your new messages</div>
+                        </div>
+                        <div class="cabinet__main__events-block">
+                            <div class="cabinet__main__events-block-header clearfix">
+                                <div class="cabinet__main__events__name">Sarah Cooper's wedding</div>
+                                <div>20.12.2015</div>
+                            </div>
+                            <div class="cabinet__main__events__reserved">Reserved</div>
+                            <div class="cabinet__main__messages__message-content">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit...
+                            </div>
+                        </div>
+                        <div class="cabinet__main__events-block">
+                            <div class="cabinet__main__events-block-header clearfix">
+                                <div class="cabinet__main__events__name">Sarah Cooper's wedding</div>
+                                <div>20.12.2015</div>
+                            </div>
+                            <div class="cabinet__main__events__reserved">Reserved</div>
+                            <div class="cabinet__main__messages__message-content">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit...
+                            </div>
+                        </div>
+                        <div class="cabinet__main__events__add-new-event">
+                            <span>+</span>
+                                <span class="add-new-event__btn pointer" data-toggle="modal" data-target="#modal-add-event">
+                                    Add new Event
+                                </span>
+                        </div>
+                    </div>
+                </aside>
+            </section>
+        </article>
+        <div class="modal fade modal__add-event" id="modal-add-event" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title text-center" id="myModalLabel">Add New Event</h3>
+                    </div>
+                    <div class="modal-body">
+                        <input type="text" placeholder="Title"/>
+                        <input type="text" placeholder="Description"/>
+                        <textarea placeholder="Your text will be here ..." name="" id="" cols="30" rows="7"></textarea>
+                        <div class="modal__add-event__date-time-wrapper clearfix">
+                            <div class="pull-left">
+                                <span class="pointer"></span>
+                                <span class="pointer"></span>
+                                <span>Start</span>
+                            </div>
+                            <div class="pull-right">
+                                <div>
+                                    <span class="pointer"></span>
+                                    <span class="pointer"></span>
+                                </div>
+                                <div>
+                                    <div class="modal__add-event__date">17.11.2015</div>
+                                    <div class="modal__add-event__time">15:05</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal__add-event__city-reminder clearfix">
+                            <div class="pull-left">
+                                <div class="btn-group">
+                                    <button type="button" class="modal__add-event__city" data-toggle="dropdown">
+                                        Choose a city
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">Kharkov</a></li>
+                                        <li><a href="#">Kiev</a></li>
+                                        <li><a href="#">Lvov</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="modal__add-event__checkbox pull-right">
+                                <input type="checkbox" class="checkbox" id="modal__add-event__checkbox" />
+                                <label for="modal__add-event__checkbox">Remind me by email</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn modal__add-event__cancel cancel pull-left pointer" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn modal__add-event__save pull-right pointer">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/bootstrap-datepicker.min.js"></script>
+<script src="js/bootstrap-datepicker.ru.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

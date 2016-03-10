@@ -1,0 +1,664 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>catalog</title>
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+</head>
+<body class="catalog">
+    <header class="custom">
+        <div class="container-fluid">
+            <div class="header-menu">
+                <div class="header-menu__logo">
+                    <h1>
+                        <a href="/ru">WEDDING
+                            <span class="and">&amp;</span>
+                            EVENT
+                            <span class="planner">PLANNER</span>
+                        </a>
+                    </h1>
+                </div>
+                <div class="header-menu__menu">
+                    <ul class="main-menu">
+                        <li>
+                            <a href="/ru/about/">About</a>
+                        </li>
+                        <li class="active">
+                            <a href="/ru/catalog/">Catalog</a>
+                        </li>
+                        <li>
+                            <a href="/ru/ideas/">Ideas</a>
+                        </li>
+                        <li>
+                            <a href="/ru/news/">News</a>
+                        </li>
+                        <li>
+                            <a href="/forum/">Forum</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header-menu__buttons">
+                    <span>
+                        <div class="dropdown">
+                            <input name="lang" type="hidden">
+                            <a id="lang" data-toggle="dropdown" role="button" href="#">Ru
+                                <span class="caret"></span>
+                            </a>
+                            <!--<ul class="dropdown-menu" role="menu" aria-labelledby="lang">-->
+                            <!--<a href="#">Ru</a>-->
+                            <!--<a href="#">En</a>-->
+                            <!--</ul>-->
+                        </div>
+                    </span>
+                        <span class="login">
+                            <div class="login-img"><img src="img/login.png" alt=""></div>
+                            <a href="#">LogIn</a>
+                        </span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="row">
+            <div class="col-sm-12">
+                <button class="cd-nav-trigger">
+                    <span aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="catalog__main">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 main-wrapper-content">
+                    <div class="catalog-main-content">
+                        <div class="col-lg-8 col-xs-6 catalog__top-text">
+                            <h1>wedding</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel massa quis enim convallis pulvinar et ut ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Praesent et lectus eros. Ut pretium, mi a sollicitudin tristique, orci felis sodales urna, ut hendrerit leo ligula ut velit. Integer consectetur lorem sed dolor sodales convallis. In ac pellentesque lectus. Pellentesque vitae mauris porttitor, sque rutrum urna neque.</p>
+                        </div>
+                        <div class="col-lg-4 col-xs-6 catalog__form-wrapper">
+                            <form class="find-presenters">
+                                <h3 class="text-center"><strong>Find</strong> your presenters</h3>
+                                <div class="dropdown find-presenters__city find-presenters__input-wrapper">
+                                    <input name="Your city" type="hidden">
+                                    <a id="city" data-toggle="dropdown" role="button" href="#">
+                                        <span>Your city</span>
+                                        <span class="caret pull-right"></span>
+                                    </a>
+                                    <ul class="dropdown-menu" role="menu" aria-labelledby="city">
+                                        <a href="#">--</a>
+                                        <a href="#">--</a>
+                                    </ul>
+                                </div>
+                                <div class="dropdown find-presenters__looking-for find-presenters__input-wrapper">
+                                    <input name="looking_for" type="hidden">
+                                    <a id="looking_for" data-toggle="dropdown" role="button" href="#">
+                                        <span>Who are you looking for?</span>
+                                        <span class="caret pull-right"></span>
+                                    </a>
+                                    <ul class="dropdown-menu" role="menu" aria-labelledby="looking_for">
+                                        <a href="#">--</a>
+                                        <a href="#">--</a>
+                                    </ul>
+                                </div>
+                                <div class="find-presenters__date find-presenters__input-wrapper">
+                                    <div class="dropdown find-presenters__select">
+                                        <input name="find_date" type="hidden">
+                                        <a id="find_date" data-toggle="dropdown" role="button" href="#">
+                                            <span>Who are you looking for?</span>
+                                            <span class="caret pull-right"></span>
+                                        </a>
+                                        <ul class="dropdown-menu" role="menu" aria-labelledby="find_date">
+                                            <a href="#">--</a>
+                                            <a href="#">--</a>
+                                        </ul>
+                                    </div>
+                                    <div class="find-presenters__calendar">
+                                        <span>11.12.2015</span>
+                                        <img class="pull-right" src="img/calendar-ico.png" alt=""/>
+                                    </div>
+                                </div>
+                                <div class="find-presenters__find pull-right">
+                                    find
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--<div class="container-fluid">-->
+            <!--<div class="row catalog__block-text">-->
+
+            <!--</div>-->
+        <!--</div>-->
+    </section>
+    <section class="catalog__categories container-fluid">
+        <h2 class="text-center">Categories</h2>
+        <div class="row">
+            <div class="categories__block text-center pull-left">
+                <a href="#">
+                    <div class="categories__img-wrapper">
+                        <div class="categories__img-video"></div>
+                    </div>
+                    <span class="categories__name">
+                        Video
+                    </span>
+                </a>
+            </div>
+            <div class="categories__block text-center pull-left">
+                <a href="#">
+                    <div class="categories__img-wrapper">
+                        <div class="categories__img-presenters"></div>
+                    </div>
+                    <span class="categories__name">
+                        Presenters
+                    </span>
+                </a>
+            </div>
+            <div class="categories__block text-center pull-left">
+                <a href="">
+                    <div class="categories__img-wrapper">
+                        <div class="categories__img-dj"></div>
+                    </div>
+                    <span class="categories__name">
+                        DJ
+                    </span>
+                </a>
+            </div>
+            <div class="categories__block text-center pull-left">
+                <a href="">
+                    <div class="categories__img-wrapper">
+                        <div class="categories__img-venues"></div>
+                    </div>
+                    <span class="categories__name">
+                        Venues
+                    </span>
+                </a>
+            </div>
+            <div class="categories__block text-center pull-left">
+                <a href="">
+                    <div class="categories__img-wrapper">
+                        <div class="categories__img-technical-support"></div>
+                    </div>
+                    <span class="categories__name">
+                        Technical support
+                    </span>
+                </a>
+            </div>
+            <div class="categories__block text-center pull-left">
+                <a href="">
+                    <div class="categories__img-wrapper">
+                        <div class="categories__img-music-program"></div>
+                    </div>
+                    <span class="categories__name">
+                        Music program
+                    </span>
+                </a>
+            </div>
+            <div class="categories__block text-center pull-left">
+                <a href="">
+                    <div class="categories__img-wrapper">
+                        <div class="categories__img-show-program"></div>
+                    </div>
+                    <span class="categories__name">
+                        Show program
+                    </span>
+                </a>
+            </div>
+            <div class="categories__block text-center pull-left">
+                <a href="">
+                    <div class="categories__img-wrapper">
+                        <div class="categories__img-souvenirs"></div>
+                    </div>
+                    <span class="categories__name">
+                        Souvenirs
+                    </span>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="categories__block text-center pull-left">
+                <a href="">
+                    <div class="categories__img-wrapper">
+                        <div class="categories__img-audio"></div>
+                    </div>
+                    <span class="categories__name">
+                        Audio
+                    </span>
+                </a>
+            </div>
+            <div class="categories__block text-center pull-left">
+                <a href="">
+                    <div class="categories__img-wrapper">
+                        <div class="categories__img-dance-program"></div>
+                    </div>
+                    <span class="categories__name">
+                        Dance program
+                    </span>
+                </a>
+            </div>
+            <div class="categories__block text-center pull-left">
+                <a href="">
+                    <div class="categories__img-wrapper">
+                        <div class="categories__img-artists"></div>
+                    </div>
+                    <span class="categories__name">
+                        Artists
+                    </span>
+                </a>
+            </div>
+            <div class="categories__block text-center pull-left">
+                <a href="">
+                    <div class="categories__img-wrapper">
+                        <div class="categories__img-transport"></div>
+                    </div>
+                    <span class="categories__name">
+                        Transport
+                    </span>
+                </a>
+            </div>
+            <div class="categories__block text-center pull-left">
+                <a href="">
+                    <div class="categories__img-wrapper">
+                        <div class="categories__img-rent"></div>
+                    </div>
+                    <span class="categories__name">
+                        Rent
+                    </span>
+                </a>
+            </div>
+            <div class="categories__block text-center pull-left">
+                <a href="">
+                    <div class="categories__img-wrapper">
+                        <div class="categories__img-staff"></div>
+                    </div>
+                    <span class="categories__name">
+                        Staff
+                    </span>
+                </a>
+            </div>
+            <div class="categories__block text-center pull-left">
+                <a href="">
+                    <div class="categories__img-wrapper">
+                        <div class="categories__img-design-and-decor"></div>
+                    </div>
+                    <span class="categories__name">
+                        Design and Decor
+                    </span>
+                </a>
+            </div>
+            <div class="categories__block text-center pull-left">
+                <a href="">
+                    <div class="categories__img-wrapper">
+                        <div class="categories__img-flowers"></div>
+                    </div>
+                    <span class="categories__name">
+                        Flowers
+                    </span>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="categories__block text-center pull-left">
+                <a href="">
+                    <div class="categories__img-wrapper">
+                        <div class="categories__img-other"></div>
+                    </div>
+                    <span class="categories__name">
+                        Other
+                    </span>
+                </a>
+            </div>
+            <div class="categories__block text-center pull-left">
+                <a href="">
+                    <div class="categories__img-wrapper">
+                        <div class="categories__img-сatering"></div>
+                    </div>
+                    <span class="categories__name">
+                        Catering
+                    </span>
+                </a>
+            </div>
+            <div class="categories__block text-center pull-left">
+                <a href="">
+                    <div class="categories__img-wrapper">
+                        <div class="categories__img-сakes"></div>
+                    </div>
+                    <span class="categories__name">
+                        Cakes and confectioner
+                    </span>
+                </a>
+            </div>
+            <div class="categories__block text-center pull-left">
+                <a href="">
+                    <div class="categories__img-wrapper">
+                        <div class="categories__img-men_s-clothing"></div>
+                    </div>
+                    <span class="categories__name">
+                        Men's Clothing
+                    </span>
+                </a>
+            </div>
+            <div class="categories__block text-center pull-left">
+                <a href="">
+                    <div class="categories__img-wrapper">
+                        <div class="categories__img-clothing-akksesuary"></div>
+                    </div>
+                    <span class="categories__name">
+                        Clothing akksesuary
+                    </span>
+                </a>
+            </div>
+            <div class="categories__block text-center pull-left">
+                <a href="">
+                    <div class="categories__img-wrapper">
+                        <div class="categories__img-beauty-and-health"></div>
+                    </div>
+                    <span class="categories__name">
+                        Beauty and Health
+                    </span>
+                </a>
+            </div>
+            <div class="categories__block text-center pull-left">
+                <a href="">
+                    <div class="categories__img-wrapper">
+                        <div class="categories__img-jewelery"></div>
+                    </div>
+                    <span class="categories__name">
+                        Jewelery
+                    </span>
+                </a>
+            </div>
+            <div class="categories__block text-center pull-left">
+                <a href="">
+                    <div class="categories__img-wrapper">
+                        <div class="categories__img-photography"></div>
+                    </div>
+                    <span class="categories__name">
+                        Photography
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="catalog__popular container-fluid">
+        <h2 class="text-center">Popular</h2>
+        <div class="row">
+            <div class="col-md-3 col-xs-6 popular__block">
+                <div class="popular__block-wrapper">
+                    <div>
+                        <img src="img/popular-1.jpg" alt=""/>
+                    </div>
+                    <span>Agency</span>
+                    <span>kharkov</span>
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-6 popular__block">
+                <div class="popular__block-wrapper">
+                    <div>
+                        <img src="img/popular-2.jpg" alt=""/>
+                    </div>
+                    <span>Agency</span>
+                    <span>kharkov</span>
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-6 popular__block">
+                <div class="popular__block-wrapper">
+                    <div>
+                        <img src="img/popular-3.jpg" alt=""/>
+                    </div>
+                    <span>Agency</span>
+                    <span>kharkov</span>
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-6 popular__block">
+                <div class="popular__block-wrapper">
+                    <div>
+                        <img src="img/popular-4.jpg" alt=""/>
+                    </div>
+                    <span>Agency</span>
+                    <span>kharkov</span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-xs-6 popular__block">
+                <div class="popular__block-wrapper">
+                    <div>
+                        <img src="img/popular-5.jpg" alt=""/>
+                    </div>
+                    <span>Agency</span>
+                    <span>kharkov</span>
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-6 popular__block">
+                <div class="popular__block-wrapper">
+                    <div>
+                        <img src="img/popular-6.jpg" alt=""/>
+                    </div>
+                    <span>Agency</span>
+                    <span>kharkov</span>
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-6 popular__block">
+                <div class="popular__block-wrapper">
+                    <div>
+                        <img src="img/popular-7.jpg" alt=""/>
+                    </div>
+                    <span>Agency</span>
+                    <span>kharkov</span>
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-6 popular__block">
+                <div class="popular__block-wrapper">
+                    <div>
+                        <img src="img/popular-8.jpg" alt=""/>
+                    </div>
+                    <span>Agency</span>
+                    <span>kharkov</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="catalog__video">
+        <img src="img/video-img.jpg" alt=""/>
+    </section>
+    <section class="catalog__new container-fluid">
+        <h2 class="text-center">New</h2>
+        <div class="row">
+            <div class="col-md-3 col-xs-6 popular__block">
+                <div class="catalog__block-wrapper">
+                    <div>
+                        <img src="img/popular-1.jpg" alt=""/>
+                    </div>
+                    <span>Agency</span>
+                    <span>kharkov</span>
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-6 popular__block">
+                <div class="catalog__block-wrapper">
+                    <div>
+                        <img src="img/popular-2.jpg" alt=""/>
+                    </div>
+                    <span>Agency</span>
+                    <span>kharkov</span>
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-6 popular__block">
+                <div class="catalog__block-wrapper">
+                    <div>
+                        <img src="img/popular-3.jpg" alt=""/>
+                    </div>
+                    <span>Agency</span>
+                    <span>kharkov</span>
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-6 popular__block">
+                <div class="catalog__block-wrapper">
+                    <div>
+                        <img src="img/popular-4.jpg" alt=""/>
+                    </div>
+                    <span>Agency</span>
+                    <span>kharkov</span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-xs-6 popular__block">
+                <div class="catalog__block-wrapper">
+                    <div>
+                        <img src="img/popular-5.jpg" alt=""/>
+                    </div>
+                    <span>Agency</span>
+                    <span>kharkov</span>
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-6 popular__block">
+                <div class="catalog__block-wrapper">
+                    <div>
+                        <img src="img/popular-6.jpg" alt=""/>
+                    </div>
+                    <span>Agency</span>
+                    <span>kharkov</span>
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-6 popular__block">
+                <div class="catalog__block-wrapper">
+                    <div>
+                        <img src="img/popular-7.jpg" alt=""/>
+                    </div>
+                    <span>Agency</span>
+                    <span>kharkov</span>
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-6 popular__block">
+                <div class="catalog__block-wrapper">
+                    <div>
+                        <img src="img/popular-8.jpg" alt=""/>
+                    </div>
+                    <span>Agency</span>
+                    <span>kharkov</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="catalog__portfolio container-fluid">
+        <h2 class="text-center">Portfolio Contractors</h2>
+        <div class="row">
+            <div class="col-md-3 col-xs-6 column-two-rows">
+                <div>
+                    <img src="img/portfolio-1.jpg" alt=""/>
+                </div>
+                <div>
+                    <img src="img/portfolio-2.jpg" alt=""/>
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-6 column-two-rows">
+                <div>
+                    <img src="img/portfolio-2.jpg" alt=""/>
+                </div>
+                <div>
+                    <img src="img/portfolio-1.jpg" alt=""/>
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-6 column-two-rows">
+                <div>
+                    <img src="img/portfolio-1.jpg" alt=""/>
+                </div>
+                <div>
+                    <img src="img/portfolio-2.jpg" alt=""/>
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-6 column-two-rows">
+                <div>
+                    <img src="img/portfolio-2.jpg" alt=""/>
+                </div>
+                <div>
+                    <img src="img/portfolio-1.jpg" alt=""/>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="custom container-fluid">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="wrapper">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3>WEDDING
+                                <span class="and">&amp;</span>
+                                EVENT
+                                <span class="planner">PLANNER</span>
+                            </h3>
+                            <div class="social">
+                                <a href="#" class="fa fa-vk"></a>
+                                <a href="#" class="fa fa-facebook"></a>
+                                <a href="#" class="fa fa-linkedin"></a>
+                                <a href="#" class="fa fa-instagram"></a>
+                                <a href="#" class="fa fa-pinterest-p"></a>
+                            </div>
+                            <p class="info">Nulla sit amet mollis odio, vitae sodales diam. Suspendisse
+                                vehicula sapien ut pellentesque suscipit. Nullam eleifend efficitur nunc sit
+                                amet porttitor. Mauris eu nisl gravida, interdum lorem ut, finibus mi. Donec
+                                enim quam, ullamcorper at nisl a, congue dignissim nisi. Etiam condimentum
+                                ultrices orci vel volutpat.</p>
+                            <p class="copyright">Wedding &amp; EventPlanner.com Copyright © 2015</p>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="footer-menu">
+                                <li>
+                                    <a href="#">Help and rules</a>
+                                </li>
+                                <li>
+                                    <a href="#">Advertisers</a>
+                                </li>
+                                <li>
+                                    <a href="/ru/about/">About us</a>
+                                </li>
+                                <li>
+                                    <a href="#">Site map</a>
+                                </li>
+                                <li>
+                                    <a href="#">Feedback</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contacts</a>
+                                </li>
+                            </ul>
+                            <form action="#" class="subscribe">
+                                <div class="submit btn-action"><input type="submit" value="Subscribe to news"></div>
+                                <input
+                                        type="email"
+                                        name="email"
+                                        class="email"
+                                        placeholder="Please enter your e-mail">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script>
+        $( document ).ready(function() {
+            $(".cd-nav-trigger").click(function () {
+                $(this).toggleClass("open");
+            });
+            $(window).scroll(function(){
+                var sticky = $('.cd-nav-trigger'),
+                        scroll = $(window).scrollTop();
+
+                if (scroll >= 680) sticky.addClass('black');
+                else sticky.removeClass('black');
+            });
+        });
+    </script>
+</body>
+</html>
