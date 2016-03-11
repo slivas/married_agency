@@ -815,7 +815,7 @@ textarea:focus:-ms-input-placeholder      {
     padding: 0 12px;
 }
 .cabinet__main__header__btn-filter button {
-    width: 125px;
+    /*width: 125px;*/
 }
 .cabinet__main__header__btn-filter:last-child button {
     margin-right: 0;
@@ -880,13 +880,13 @@ textarea:focus:-ms-input-placeholder      {
     color: #858585;
     font-size: 12px;
 }
-.bookmarks-thumbnail-close {
+.thumbnail-close {
     position: absolute;
     right: 14px;
     top: 5px;
     visibility: hidden;
 }
-.bookmarks-main .col-xs-4 > .thumbnail:hover .bookmarks-thumbnail-close {
+.bookmarks-main .col-xs-4 > .thumbnail:hover .thumbnail-close {
     visibility: visible;
 }
 .bookmarks-main .thumbnail > img {
@@ -1016,6 +1016,7 @@ textarea.edit-main__adress {
     height: 100%;
     -webkit-appearance: none;
     width: 345px;
+    line-height: 1.5;
 }
 /*Audio*/
 .audio-main .row {
@@ -1028,6 +1029,7 @@ textarea.edit-main__adress {
     background: transparent url("../img/search-ico.png") no-repeat scroll 0 0;
     border: 0 none;
     height: 16px;
+    vertical-align: middle;
     width: 20px;
 }
 .audio-main_audio-add {
@@ -1112,13 +1114,13 @@ textarea.edit-main__adress {
     float: right !important;
     padding: 4px 0 4px 15px;
 }
-.audio-main__audio-control__download {
+.control__download {
     background: transparent url("../img/audio-control.png") 0 0 no-repeat;
     display: inline-block;
     height: 18px;
     width: 15px;
 }
-.audio-main__audio-control__delete {
+.control__delete {
     background: transparent url("../img/audio-control.png") no-repeat scroll -52px 1px;
     display: inline-block;
     height: 19px;
@@ -1135,16 +1137,7 @@ textarea.edit-main__adress {
 .cabinet__photos .cabinet__main__header__search {
     width: 210px;
 }
-.cabinet__photos__create-album.cabinet-shadow {
-    background-color: #fff;
-    padding: 8px 15px;
-}
-.cabinet__photos__albums .btn-group > button {
-    background-color: #fff;
-    border: 0 none;
-    padding: 8px;
-}
-.cabinet__photos__albums .btn-group > button > span:first-child {
+.modal__add-event__city.cabinet-shadow > span:first-child {
     display: inline-block;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -1152,6 +1145,67 @@ textarea.edit-main__adress {
     white-space: nowrap;
     width: 88px;
 }
+.cabinet__photos__albums .dropdown-menu {
+    width: 129px;
+}
+.photos__create-album img {
+    margin-right: -9px;
+    width: 13%;
+}
+.photos-main__add-photos {
+    border: 1px dashed #dbdbdb;
+    display: table;
+    height: 330px;
+    padding: 25px;
+    position: relative;
+}
+.photos-main__add-photos > img {
+    position: absolute;
+    right: 25px;
+}
+.photos-main__add-photos > div {
+    display: table-cell;
+    vertical-align: bottom;
+}
+.photos-main__add-photos > div > div:first-child {
+    color: #000;
+    margin-bottom: 10px;
+}
+.photos-main__add-photos > div > div:last-child {
+    color: #858585;
+    font-size: 13px;
+    line-height: 1.6;
+}
+.photos-main .thumbnail {
+    border: medium none;
+    border-radius: 0;
+    height: 330px;
+    padding: 0;
+}
+.photos-main__add-photos__img {
+    height: 250px;
+    overflow: hidden;
+}
+.photos-main__add-photos__img > img {
+    width: 100%;
+}
+.photos-main__photo .caption {
+    padding: 20px 15px;
+}
+.photos-main__thumbnail-info-block > span:first-child {
+    color: #858585;
+    font-size: 11px;
+}
+.photos-main__thumbnail-info-block > span:first-child {
+    padding-top: 5px;
+}
+.photos-main .control__download {
+    background-position: 17px 0;
+    border-left: 1px solid #e8e8e8;
+    padding: 0 21px;
+}
+
+
 
 
 

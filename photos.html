@@ -195,22 +195,22 @@
                             </span>
                         </div>
                         <div class="cabinet__main__header__btn-filter-wrapper pull-right">
-                            <div class="cabinet__photos__create-album cabinet-shadow">
-                                <span>Create album</span>
-                                <img src="../img/plus.png" alt=""/>
+                            <div class="btn-group cabinet__main__header__btn-filter photos__create-album">
+                                <button type="button" class="modal__add-event__city cabinet-shadow">
+                                    <span>Create album</span>
+                                    <img src="../img/plus.png" alt=""/>
+                                </button>
                             </div>
-                            <div class="cabinet__photos__albums cabinet-shadow">
-                                <div class="btn-group">
-                                    <button type="button" class="" data-toggle="dropdown">
-                                        <span>Albums and photos</span>
-                                        <span class="caret"></span>
-                                    </button>
-                                    <ul class="dropdown-menu" role="menu">
-                                        <li><a href="#">Albums</a></li>
-                                        <li><a href="#">Albums</a></li>
-                                        <li><a href="#">Albums</a></li>
-                                    </ul>
-                                </div>
+                            <div class="btn-group cabinet__main__header__btn-filter cabinet__photos__albums">
+                                <button type="button" class="modal__add-event__city cabinet-shadow" data-toggle="dropdown">
+                                    <span>Albums and photos</span>
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">City 1</a></li>
+                                    <li><a href="#">City 2</a></li>
+                                    <li><a href="#">City 3</a></li>
+                                </ul>
                             </div>
                             <div class="cabinet__main__header__search-wrapper cabinet-shadow">
                                 <input class="cabinet__main__header__search" type="search" placeholder="Search..."/>
@@ -219,113 +219,48 @@
                         </div>
                     </div>
 
-                    <div class="cabinet__main-content audio-main">
+                    <div class="cabinet__main-content photos-main">
                         <div class="row">
-                            <div class="col-xs-12 no-padding-left">
-                                <div class="audio-main_audio-add-wrapper">
-                                    <div class="audio-main_audio-add">
-                                        <div class="pointer">
-                                            <img src="../img/add-audio-plus.png" alt=""/>
-                                        </div>
-                                        <div>
-                                            <div>Add to collection</div>
-                                            <div>Drag the new file in the selected field, or click “add”</div>
+                            <div class="col-xs-4 no-padding-left">
+                                <div class="photos-main__add-photos">
+                                    <img class="pointer" src="img/add-audio-plus.png" alt=""/>
+                                    <div>
+                                        <div>Add to collection</div>
+                                        <div>Drag the new file in the selected field, or click “add”</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-4 no-padding-left">
+                                <div class="thumbnail photos-main__photo cabinet-shadow">
+                                    <div class="thumbnail-close pointer">
+                                        <img src="img/close-ico-bookmarks.png" alt=""/>
+                                    </div>
+                                    <div class="photos-main__add-photos__img">
+                                        <img src="img/photos-img-1.png" alt="...">
+                                    </div>
+                                    <div class="caption clearfix">
+                                        <div>Photo title</div>
+                                        <div class="photos-main__thumbnail-info-block clearfix">
+                                            <span class="pull-left">21.03.2016</span>
+                                            <span class="pull-right control__download pointer"></span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xs-12 no-padding-left">
-                                <div class="audio-main_audio-wrapper cabinet-shadow">
-                                    <div class="audio-main_audio">
-                                        <div class="pointer audio-btns">
-                                            <span class="audio-btn-play"></span>
-                                        </div>
-                                        <div class="audio-main_audio-info">
-                                            <div class="audio-main_audio-name">The name of the soundtrack</div>
-                                            <div class="audio-main_audio-time-artist">
-                                                <span class="audio-main_audio-time">3:44</span>
-                                                <span class="audio-main_audio-artist">Name of the artist</span>
-                                            </div>
-                                        </div>
-                                        <div class="audio-main__waves"></div>
-                                        <div class="audio-main__audio-control-wrapper">
-                                            <span class="audio-main__audio-control__download pointer"></span>
-                                            <span class="audio-main__audio-control__delete pointer"></span>
-                                        </div>
+                            <div class="col-xs-4 no-padding-left">
+                                <div class="thumbnail photos-main__album cabinet-shadow">
+                                    <div class="thumbnail-close pointer">
+                                        <img src="img/close-ico-bookmarks.png" alt=""/>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xs-12 no-padding-left">
-                                <div class="audio-main_audio-wrapper cabinet-shadow">
-                                    <div class="audio-main_audio">
-                                        <div class="pointer audio-btns">
-                                            <span class="audio-btn-pause"></span>
-                                        </div>
-                                        <div class="audio-main_audio-info">
-                                            <div class="audio-main_audio-name">The name of the soundtrack</div>
-                                            <div class="audio-main_audio-time-artist">
-                                                <span class="audio-main_audio-time">3:44</span>
-                                                <span class="audio-main_audio-artist">Name of the artist</span>
-                                            </div>
-                                        </div>
-                                        <div class="audio-main__waves active"></div>
-                                        <div class="audio-main__audio-control-wrapper">
-                                            <span class="audio-main__audio-control__download pointer"></span>
-                                            <span class="audio-main__audio-control__delete pointer"></span>
-                                        </div>
+                                    <div class="photos-main__add-photos__img">
+                                        <img src="img/photos-img-1.png" alt="...">
                                     </div>
-                                </div>
-                            </div>
-                        </div><div class="row">
-                        <div class="col-xs-12 no-padding-left">
-                            <div class="audio-main_audio-wrapper cabinet-shadow">
-                                <div class="audio-main_audio">
-                                    <div class="pointer audio-btns">
-                                        <span class="audio-btn-play"></span>
-                                    </div>
-                                    <div class="audio-main_audio-info">
-                                        <div class="audio-main_audio-name">The name of the soundtrack</div>
-                                        <div class="audio-main_audio-time-artist">
-                                            <span class="audio-main_audio-time">3:44</span>
-                                            <span class="audio-main_audio-artist">Name of the artist</span>
-                                        </div>
-                                    </div>
-                                    <div class="audio-main__waves"></div>
-                                    <div class="audio-main__audio-control-wrapper">
-                                        <span class="audio-main__audio-control__download pointer"></span>
-                                        <span class="audio-main__audio-control__delete pointer"></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><div class="row">
-                        <div class="col-xs-12 no-padding-left">
-                            <div class="audio-main_audio-wrapper cabinet-shadow">
-                                <div class="audio-main_audio">
-                                    <div class="pointer audio-btns">
-                                        <span class="audio-btn-play"></span>
-                                    </div>
-                                    <div class="audio-main_audio-info">
-                                        <div class="audio-main_audio-name">The name of the soundtrack</div>
-                                        <div class="audio-main_audio-time-artist">
-                                            <span class="audio-main_audio-time">3:44</span>
-                                            <span class="audio-main_audio-artist">Name of the artist</span>
-                                        </div>
-                                    </div>
-                                    <div class="audio-main__waves"></div>
-                                    <div class="audio-main__audio-control-wrapper">
-                                        <span class="audio-main__audio-control__download pointer"></span>
-                                        <span class="audio-main__audio-control__delete pointer"></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                                    <div class="caption clearfix">
 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
