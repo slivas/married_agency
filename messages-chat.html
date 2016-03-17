@@ -185,28 +185,61 @@
             </section>
             <section class="row cabinet__main">
                 <div class="col-xs-9 no-padding">
-                    <div class="message-chat__header clearfix">
-                        <div class="message-chat__side-left pull-left">
-                            <div class="message-chat__header-avatar-wrapper">
-                                <div class="message-chat__header-avatar">
-                                    <span>img</span>
+                    <div class="row">
+                        <div class="col-xs-12 message-chat__header no-padding clearfix">
+                            <div class="message-chat__side-left pull-left">
+                                <div class="message-chat__header-avatar-wrapper">
+                                    <div class="message-chat__header-avatar">
+                                        <span>img</span>
+                                    </div>
+                                </div>
+                                <div class="message-chat__user-info">
+                                    <div>Name Surname</div>
+                                    <div>Online</div>
+                                    <div>Presenter</div>
                                 </div>
                             </div>
-                            <div class="message-chat__user-info">
-                                <div>Amorgs and Mr & Mrs</div>
-                                <div>Online</div>
-                                <div>Presenter</div>
+                            <div class="message-chat__side-right pull-right">
+                                <div class="message-chat__user-info">
+                                    <div>Amorgs and Mr & Mrs</div>
+                                    <div>Online</div>
+                                    <div>Presenter</div>
+                                </div>
+                                <div class="message-chat__header-avatar-wrapper">
+                                    <div class="message-chat__header-avatar">
+                                        <span>img</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="message-chat__side-right pull-right">
-                            <div class="message-chat__user-info">
-                                <div>Amorgs and Mr & Mrs</div>
-                                <div>Online</div>
-                                <div>Presenter</div>
-                            </div>
-                            <div class="message-chat__header-avatar-wrapper">
-                                <div class="message-chat__header-avatar">
-                                    <span>img</span>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 message-chat__chat-window cabinet-shadow top-to-down  clearfix">
+                            <div class="row">
+
+                                <div class="col-xs-12 message-chat__chat-window__row-user">
+                                    <div class="row">
+                                        <div class="col-xs-6 message-chat__chat-window__user-msg clearfix">
+                                            <span>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eleifend auctor dui, sit amet laoreet magna bibendum eu. Aenean a odio purus.
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-6 message-chat__chat-window__user-msg clearfix">
+                                            <span>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eleifend auctor dui, sit amet laoreet magna bibendum eu. Aenean a odio purus.
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-12 message-chat__chat-window__row">
+                                    <div class="col-xs-6 message-chat__chat-window__friend-msg">
+                                        <span>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eleifend auctor dui, sit amet laoreet magna bibendum eu. Aenean a odio purus.
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -217,60 +250,6 @@
                 </aside>
             </section>
         </article>
-        <div class="modal fade modal__add-event" id="modal-add-event" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h3 class="modal-title text-center" id="myModalLabel">Add New Event</h3>
-                    </div>
-                    <div class="modal-body">
-                        <input type="text" placeholder="Title"/>
-                        <input type="text" placeholder="Description"/>
-                        <textarea placeholder="Your text will be here ..." name="" id="" cols="30" rows="7"></textarea>
-                        <div class="modal__add-event__date-time-wrapper clearfix">
-                            <div class="pull-left">
-                                <span class="pointer"></span>
-                                <span class="pointer"></span>
-                                <span>Start</span>
-                            </div>
-                            <div class="pull-right">
-                                <div>
-                                    <span class="pointer"></span>
-                                    <span class="pointer"></span>
-                                </div>
-                                <div>
-                                    <div class="modal__add-event__date">17.11.2015</div>
-                                    <div class="modal__add-event__time">15:05</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal__add-event__city-reminder clearfix">
-                            <div class="pull-left">
-                                <div class="btn-group">
-                                    <button type="button" class="modal__add-event__city" data-toggle="dropdown">
-                                        Choose a city
-                                        <span class="caret"></span>
-                                    </button>
-                                    <ul class="dropdown-menu" role="menu">
-                                        <li><a href="#">Kharkov</a></li>
-                                        <li><a href="#">Kiev</a></li>
-                                        <li><a href="#">Lvov</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="modal__add-event__checkbox pull-right">
-                                <input type="checkbox" class="checkbox" id="modal__add-event__checkbox" />
-                                <label for="modal__add-event__checkbox">Remind me by email</label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn modal__add-event__cancel cancel pull-left pointer" data-dismiss="modal">Cancel</button>
-                        <button type="button" class="btn modal__add-event__save pull-right pointer">Save</button>
-                    </div>
-                </div>
-            </div>
-        </div>
     </main>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
