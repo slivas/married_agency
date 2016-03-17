@@ -840,6 +840,12 @@ textarea:focus:-ms-input-placeholder      {
     font-size: 12px;
     padding: 5px 12px;
 }
+.dropdown-menu.all-categories {
+    width: 128px;
+}
+.dropdown-menu.all-cities {
+    min-width: 100px;
+}
 .bookmarks-main .caret {
     margin-left: 15px;
 }
@@ -1427,6 +1433,105 @@ textarea.edit-main__adress {
     height: 30px;
     width: 30px;
 }
+/*Messages*/
+.messages-block {
+    background-color: #ffffff;
+    color: #858585;
+    padding: 27px;
+}
+.message__avatar-wrapper {
+    margin-right: 27px;
+}
+.messages-block > div {
+    display: inline-block;
+    vertical-align: top;
+}
+.message__block-avatar {
+    background-color: #f3f3f3;
+    display: table;
+    height: 58px;
+    overflow: hidden;
+    text-align: center;
+    width: 58px;
+}
+.message__block-avatar > span {
+    color: #8d8d8d;
+    display: table-cell;
+    font-size: 12px;
+    vertical-align: middle;
+}
+.message__block-content {
+    width: calc(100% - 100px);
+}
+.message__block-quantity-msg,
+.message-chat__user-info > div:nth-child(3) {
+    color: #44b1d7;
+    font-size: 12px;
+}
+.message__block-name {
+    line-height: 1.5;
+}
+.message__block-name > span:first-child {
+    color: #000;
+    margin-right: 30px;
+}
+.message__block-status {
+    font-size: 11px;
+}
+.message__block-message-text {
+    line-height: 1.5;
+    margin-top: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 80%;
+}
+.messages-block .control__delete.pointer {
+    background-position: -41px 1px;
+    border-left: 1px solid #e8e8e8;
+    width: 27px;
+}
+.messages-main .row {
+    margin-bottom: 15px;
+}
+/*msg-chat*/
+.message-chat__header.clearfix {
+    margin-top: 31px;
+}
+.message-chat__header-avatar {
+    background-color: #fff;
+    display: table;
+    height: 58px;
+    text-align: center;
+    width: 58px;
+}
+.message-chat__header-avatar > span {
+    display: table-cell;
+    vertical-align: middle;
+}
+.message-chat__side-left > div,
+.message-chat__side-right > div {
+    display: inline-block;
+    vertical-align: top;
+}
+.message-chat__user-info {
+    margin: 0 17px;
+}
+.message-chat__user-info > div:first-child {
+    color: #000;
+}
+.message-chat__user-info > div:nth-child(2) {
+    color: #858585;
+    font-size: 11px;
+}
+.message-chat__user-info > div {
+    padding: 4px 0;
+}
+.message-chat__side-right .message-chat__user-info {
+    text-align: right;
+}
+
+
 
 
 
