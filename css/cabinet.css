@@ -1531,12 +1531,14 @@ textarea.edit-main__adress {
 .message-chat__side-right .message-chat__user-info {
     text-align: right;
 }
+.message-chat__wrapper {
+    margin-top: 20px;
+}
 .message-chat__chat-window {
     background-color: #fff;
     height: 550px;
-    margin-top: 20px;
     overflow: auto;
-    padding: 0 30px;
+    padding: 0 40px;
 }
 .message-chat__chat-window__row{
     padding: 0 30px;
@@ -1570,7 +1572,6 @@ textarea.edit-main__adress {
     transform: rotate(-10deg);
     width: 0;
 }
-
 .message-chat__chat-window__friend-msg::after {
     border-bottom: 15px solid #ddebee;
     border-right: 19px solid transparent;
@@ -1581,6 +1582,64 @@ textarea.edit-main__adress {
     right: -17px;
     transform: rotate(10deg);
     width: 0;
+}
+.message-chat__chat-window .col-xs-6 {
+    width: 46%;
+}
+.message-chat__chat-window__msg-info {
+    color: #b8b8b8;
+    margin-bottom: 20px;
+}
+.message-chat__chat-window__msg-info > span {
+    font-size: 12px;
+}
+.message-chat__chat-window .vertical-line {
+    border-left: 1px solid;
+    margin: 0 5px;
+}
+.message-chat__chat-window .new-msg {
+    color: #626262;
+}
+.message-chat__chat-panel {
+    background-color: #fff;
+    border-top: 1px solid #e8e8e8;
+}
+.msg-smiles-wrapper {
+    padding-bottom: 18px;
+    padding-top: 20px;
+}
+.msg-smiles-btn {
+    background: transparent url("../img/msg-panel.png") no-repeat scroll 0 0;
+    display: inline-block;
+    height: 27px;
+    margin-left: 10px;
+    width: 27px;
+}
+.msg-smiles-wrapper .dropdown-menu {
+    border: medium none;
+    border-radius: 0;
+    min-width: 250px;
+    top: -30px;
+}
+.msg-smiles-block > span {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-image: url("../img/smiles.png");
+    display: inline-block;
+    height: 38px;
+    width: 47px;
+}
+.msg-smile-2 {
+    background-position: -98px 0;
+}
+.msg-smile-3 {
+    background-position: -185px 0;
+}
+.msg-smile-4 {
+    background-position: -272px 0;
+}
+.msg-smile-5 {
+    background-position: -360px 0;
 }
 
 
