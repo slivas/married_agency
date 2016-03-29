@@ -120,7 +120,8 @@ header.custom {
 }
 .cabinet__users-menu ul a:hover,
 .cabinet__users-menu__user-categories li.active > a,
-.cabinet__users-menu__user-actions li.active > a {
+.cabinet__users-menu__user-actions li.active > a,
+.cabinet__users-menu__user-settings li.active > a {
     color: #ffffff;
 }
 .cabinet__users-menu__user-actions ul a {
@@ -1841,7 +1842,98 @@ textarea.edit-main__adress {
     display: table-cell;
     vertical-align: middle;
 }
-
+/*reset password*/
+.modal.fade.modal__reset-password {
+    margin-top: -210px;
+    top: 50%;
+}
+.modal__reset-password .modal-content {
+    padding: 35px;
+}
+.modal__reset-password .modal-dialog {
+    width: 320px;
+}
+.modal__reset-password .modal-body > input {
+    border: 1px solid #eaeaea;
+    display: block;
+    font-size: 12px;
+    margin-bottom: 22px;
+    padding: 14px;
+    width: 100%;
+}
+.modal__reset-password .modal-header,
+.modal__reset-password .modal-body,
+.modal__reset-password .modal-footer {
+    border: none;
+    padding: 0;
+}
+.modal__reset-password .modal-header h3 {
+    color: #626262;
+    line-height: 1;
+    margin-bottom: 25px;
+}
+.modal__reset-password .modal-footer .btn {
+    width: 100%;
+}
+/*settings*/
+.settings-dropdown > button {
+    padding: 10px 15px;
+}
+.settings-main__row h3 {
+    display: inline-block;
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+.settings__icon-tariff__wrapper {
+    border: 1px solid #eaeaea;
+    display: inline-block;
+    padding: 10px;
+}
+.settings__icon-tariff__wrapper > div {
+    /*display: inline-block;*/
+    vertical-align: top;
+}
+.settings__icon-tariff__img {
+    width: 100px;
+}
+.settings__icon-tariff__about-block {
+    width: calc(95% - 100px);
+}
+.settings__icon-tariff__img__inner {
+    background-color: #f5f7f7;
+    border: 1px dashed #dbdbdb;
+    display: table;
+    height: 126px;
+    text-align: center;
+    width: 100%;
+}
+.settings__icon-tariff__img__inner > span {
+    display: table-cell;
+    vertical-align: middle;
+}
+.settings__icon-tariff__about {
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+.settings__icon-tariff__about-block h5 {
+    color: #000;
+    font-weight: 700;
+}
+.settings__icon-tariff__choose > a {
+    color: #44b2d7;
+    text-decoration: underline;
+}
+.settings__icon-tariff__choose > a:hover {
+    text-decoration: none;
+}
+.btn__save-settings {
+    background-color: #f3f3f3;
+    border: 1px solid #eaeaea;
+    margin: 0 auto;
+    padding: 15px 0;
+    width: 205px;
+}
 
 
 

@@ -111,7 +111,7 @@
                     <li>
                         <a href="/notifications.html" class="cabinet__users-menu__user-category-notifications">Notifications</a>
                     </li>
-                    <li class="active">
+                    <li>
                         <a href="/messages.html" class="cabinet__users-menu__user-category-messages">Messages</a>
                     </li>
                     <li>
@@ -124,7 +124,7 @@
             </section>
             <section class="cabinet__users-menu__user-settings">
                 <ul>
-                    <li>
+                    <li class="active">
                         <a href="/settings.html" class="cabinet__users-menu__user-settings__settings">Settings</a>
                     </li>
                     <li>
@@ -137,11 +137,11 @@
                 <label for="checkbox">Subscribe</label>
             </section>
         </aside>
-        <article class="messages-main">
+        <article>
             <section class="cabinet__top-info-panel">
                 <ol class="breadcrumb">
                     <li><a href="#">Account </a></li>
-                    <li>Messages</li>
+                    <li class="active">Settings</li>
                 </ol>
                 <div class="cabinet__top-info-panel_disc-space">
                     <div class="cabinet__top-info-panel__disc-space__text-info">
@@ -183,95 +183,135 @@
                 </div>
             </section>
             <section class="row cabinet__main">
-                <div class="col-xs-9 no-padding">
+                <div class="col-xs-9 no-padding-left">
                     <div class="cabinet__main__header clearfix">
-                        <h1>Messages</h1>
+                        <h1>Settings</h1>
                     </div>
-                    <div class="cabinet__main-content">
-                        <div class="row">
-                            <div class="col-xs-12 no-padding-left">
-                                <div class="messages-block cabinet-shadow">
-                                    <div class="message__avatar-wrapper">
-                                        <div class="message__block-avatar">
-                                            <span>img</span>
-                                        </div>
+                    <div class="cabinet__main-content edit-main settings-main">
+                        <div class="settings-main__row">
+                            <div class="row edit-main__margin-small">
+                                <div class="col-xs-6 no-padding">
+                                    <input class="edit-page__title" type="text" placeholder="Name" />
+                                </div>
+                                <div class="col-xs-6 no-padding-right">
+                                    <input class="edit-page__title" type="text" placeholder="Email" />
+                                </div>
+                            </div>
+                            <div class="row edit-main__margin-small">
+                                <div class="col-xs-6 no-padding">
+                                    <input class="edit-page__title" type="text" placeholder="Surname" />
+                                </div>
+                                <div class="col-xs-6 no-padding-right">
+                                    <div class="edit-main__additional">
+                                        <span>
+                                            <img src="../img/plus.png" alt=""/>
+                                        </span>
+                                        <span>
+                                            Additional email
+                                        </span>
                                     </div>
-                                    <div class="message__block-content">
-                                        <div class="message__block-name">
-                                            <span>Amorgs and Mr & Mrs</span>
-                                            <span class="message__block-quantity-msg">
-                                                +
-                                                <span>1</span>
-                                                message
-                                            </span>
+                                </div>
+                            </div>
+                            <div class="row edit-main__margin-small">
+                                <div class="col-xs-6 no-padding">
+                                    <input class="edit-page__title" type="text" placeholder="Patronymic" />
+                                </div>
+                                <div class="col-xs-6 no-padding-right">
+                                    <input class="edit-page__title" type="text" placeholder="Phone" />
+                                </div>
+                            </div>
+                            <div class="row edit-main__margin-small">
+                                <div class="col-xs-6 no-padding">
+                                    <div class="btn-group edit-main__type-price settings-dropdown">
+                                        <button type="button" data-toggle="dropdown">
+                                            Profession
+                                            <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><a href="#"></a></li>
+                                            <li><a href="#"></a></li>
+                                            <li><a href="#"></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 no-padding-right">
+                                    <div class="edit-main__additional">
+                                        <span>
+                                            <img src="../img/plus.png" alt=""/>
+                                        </span>
+                                        <span>
+                                            Additional phone number
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row edit-main__margin-small">
+                                <div class="col-xs-6 no-padding">
+                                    <div class="btn-group edit-main__type-price settings-dropdown">
+                                        <button type="button" data-toggle="dropdown">
+                                            City
+                                            <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><a href="#"></a></li>
+                                            <li><a href="#"></a></li>
+                                            <li><a href="#"></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 no-padding-right">
+                                    <div class="edit-main__additional">
+                                        <span>
+                                            <img src="../img/plus.png" alt=""/>
+                                        </span>
+                                        <span>
+                                            Additional phone number
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="settings-main__row">
+                            <div class="row edit-main__margin-small">
+                                <div class="col-xs-6 no-padding">
+                                    <h3>Password settings</h3>
+                                    <div class="row edit-main__margin-small">
+                                        <input class="edit-page__title" type="text" placeholder="Your old Password" />
+                                    </div>
+                                    <div class="row edit-main__margin-small">
+                                        <input class="edit-page__title" type="text" placeholder="New Password" />
+                                    </div>
+                                    <div class="row edit-main__margin-small">
+                                        <input class="edit-page__title" type="text" placeholder="Confirm New Password" />
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 no-padding-right">
+                                    <h3>Tariff settings</h3>
+                                    <div class="settings__icon-tariff__wrapper">
+                                        <div class="settings__icon-tariff__img pull-left">
+                                            <div class="settings__icon-tariff__img__inner">
+                                                <span>icon tariff</span>
+                                            </div>
                                         </div>
-                                        <div class="message__block-status">Online</div>
-                                        <div class="clearfix">
-                                            <div class="message__block-message-text pull-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-                                            <span class="pull-right control__delete pointer"></span>
+                                        <div class="settings__icon-tariff__about-block pull-right">
+                                            <h5>Name Tariff</h5>
+                                            <div class="settings__icon-tariff__about">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et Lorem ipsum dolor sit amet, elit. ...
+                                            </div>
+                                            <div class="settings__icon-tariff__choose">
+                                                <a href="">Сhoose tariff</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-xs-12 no-padding-left">
-                                <div class="messages-block cabinet-shadow">
-                                    <div class="message__avatar-wrapper">
-                                        <div class="message__block-avatar">
-                                            <span>img</span>
-                                        </div>
-                                    </div>
-                                    <div class="message__block-content">
-                                        <div class="message__block-name">
-                                            <span>Amorgs and Mr & Mrs</span>
-                                            <span class="message__block-quantity-msg">
-                                                +
-                                                <span>1</span>
-                                                message
-                                            </span>
-                                        </div>
-                                        <div class="message__block-status">Offline</div>
-                                        <div class="clearfix">
-                                            <div class="message__block-message-text pull-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-                                            <span class="pull-right control__delete pointer"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xs-12 no-padding-left">
-                                <div class="messages-block cabinet-shadow">
-                                    <div class="message__avatar-wrapper">
-                                        <div class="message__block-avatar">
-                                            <span>img</span>
-                                        </div>
-                                    </div>
-                                    <div class="message__block-content">
-                                        <div class="message__block-name">
-                                            <span>Amorgs and Mr & Mrs</span>
-                                            <span class="message__block-quantity-msg">
-                                                +
-                                                <span>1</span>
-                                                message
-                                            </span>
-                                        </div>
-                                        <div class="message__block-status">
-                                            <span>20.55</span>
-                                            <span>|</span>
-                                            <span>21.12.2015</span>
-                                        </div>
-                                        <div class="clearfix">
-                                            <div class="message__block-message-text pull-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-                                            <span class="pull-right control__delete pointer"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="btn__save-settings text-center pointer">
+                            Save settings
                         </div>
                     </div>
                 </div>
+
                 <aside class="col-xs-3 no-padding cabinet__right-column">
                     <div class="calendar cabinet-shadow"></div>
                     <div class="cabinet__main__events-wrapper cabinet-shadow">
@@ -301,9 +341,9 @@
                         </div>
                         <div class="cabinet__main__events__add-new-event">
                             <span>+</span>
-                                <span class="add-new-event__btn pointer" data-toggle="modal" data-target="#modal-add-event">
-                                    Add new Event
-                                </span>
+                            <span class="add-new-event__btn pointer" data-toggle="modal" data-target="#modal-add-event">
+                                Add new Event
+                            </span>
                         </div>
                     </div>
                 </aside>
@@ -387,6 +427,5 @@
 <script src="js/bootstrap-datepicker.min.js"></script>
 <script src="js/bootstrap-datepicker.ru.min.js"></script>
 <script src="js/main.js"></script>
-
 </body>
 </html>

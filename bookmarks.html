@@ -97,8 +97,8 @@
                     <li>
                         <a href="/dashboard.html" class="cabinet__users-menu__user-category-dashboard">Dashboard</a>
                     </li>
-                    <li>
-                        <a href="/" class="cabinet__users-menu__user-category-bookmarks">Bookmarks</a>
+                    <li class="active">
+                        <a href="/bookmarks.html" class="cabinet__users-menu__user-category-bookmarks">Bookmarks</a>
                     </li>
                     <li class="dropdown">
                         <a data-toggle="dropdown" class="cabinet__users-menu__user-category-media" href="#">Media</a>
@@ -111,21 +111,21 @@
                     <li>
                         <a href="/notifications.html" class="cabinet__users-menu__user-category-notifications">Notifications</a>
                     </li>
-                    <li class="active">
+                    <li>
                         <a href="/messages.html" class="cabinet__users-menu__user-category-messages">Messages</a>
                     </li>
                     <li>
                         <a href="/statistics.html" class="cabinet__users-menu__user-category-statistics">Statistics</a>
                     </li>
                     <li>
-                        <a href="/forum.html" class="cabinet__users-menu__user-category-forum">Forum</a>
+                        <a href="" class="cabinet__users-menu__user-category-forum">Forum</a>
                     </li>
                 </ul>
             </section>
             <section class="cabinet__users-menu__user-settings">
                 <ul>
                     <li>
-                        <a href="/settings.html" class="cabinet__users-menu__user-settings__settings">Settings</a>
+                        <a href="" class="cabinet__users-menu__user-settings__settings">Settings</a>
                     </li>
                     <li>
                         <a href="#" class="cabinet__users-menu__user-settings__reset-pass" data-target="#modal__reset-password" data-toggle="modal">Reset Password</a>
@@ -137,11 +137,11 @@
                 <label for="checkbox">Subscribe</label>
             </section>
         </aside>
-        <article class="messages-main">
+        <article class="bookmarks-main">
             <section class="cabinet__top-info-panel">
                 <ol class="breadcrumb">
                     <li><a href="#">Account </a></li>
-                    <li>Messages</li>
+                    <li class="active">Bookmarks</li>
                 </ol>
                 <div class="cabinet__top-info-panel_disc-space">
                     <div class="cabinet__top-info-panel__disc-space__text-info">
@@ -185,87 +185,214 @@
             <section class="row cabinet__main">
                 <div class="col-xs-9 no-padding">
                     <div class="cabinet__main__header clearfix">
-                        <h1>Messages</h1>
+                        <h1>Bookmarks</h1>
+                        <div class="bookmarks__header-info">
+                            <span>87</span>
+                            <span>
+                                displayed
+                                <span>6</span>
+                            </span>
+                        </div>
+                        <div class="cabinet__main__header__btn-filter-wrapper pull-right">
+                            <div class="btn-group cabinet__main__header__btn-filter">
+                                <button type="button" class="modal__add-event__city cabinet-shadow" data-toggle="dropdown">
+                                    All categories
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu all-categories" role="menu">
+                                    <li><a href="#">Category 1</a></li>
+                                    <li><a href="#">Category 2</a></li>
+                                    <li><a href="#">Category 3</a></li>
+                                </ul>
+                            </div>
+                            <div class="btn-group cabinet__main__header__btn-filter">
+                                <button type="button" class="modal__add-event__city cabinet-shadow" data-toggle="dropdown">
+                                    All cities
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu all-cities" role="menu">
+                                    <li><a href="#">City 1</a></li>
+                                    <li><a href="#">City 2</a></li>
+                                    <li><a href="#">City 3</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
+
                     <div class="cabinet__main-content">
                         <div class="row">
-                            <div class="col-xs-12 no-padding-left">
-                                <div class="messages-block cabinet-shadow">
-                                    <div class="message__avatar-wrapper">
-                                        <div class="message__block-avatar">
-                                            <span>img</span>
-                                        </div>
+                            <div class="col-xs-4 no-padding-left">
+                                <div class="thumbnail cabinet-shadow">
+                                    <div class="thumbnail-close pointer">
+                                        <img src="img/close-ico-bookmarks.png" alt=""/>
                                     </div>
-                                    <div class="message__block-content">
-                                        <div class="message__block-name">
-                                            <span>Amorgs and Mr & Mrs</span>
-                                            <span class="message__block-quantity-msg">
-                                                +
-                                                <span>1</span>
-                                                message
-                                            </span>
-                                        </div>
-                                        <div class="message__block-status">Online</div>
-                                        <div class="clearfix">
-                                            <div class="message__block-message-text pull-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-                                            <span class="pull-right control__delete pointer"></span>
-                                        </div>
+                                    <img src="img/bookmarks-img1.png" alt="...">
+                                    <div class="caption clearfix">
+                                        <h4>Bontempi</h4>
+                                        <span class="bookmarks-main__thumbnail-place pull-left">Restaurant, Moscow</span>
+                                        <span class="bookmarks-main__stars-rating-wrapper pull-right">
+                                            <span class="bookmarks-main__stars-rating__active"></span>
+                                            <span class="bookmarks-main__stars-rating__active"></span>
+                                            <span class="bookmarks-main__stars-rating__active"></span>
+                                            <span class="bookmarks-main__stars-rating__not-active"></span>
+                                            <span class="bookmarks-main__stars-rating__not-active"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-4 no-padding-left">
+                                <div class="thumbnail cabinet-shadow">
+                                    <div class="thumbnail-close pointer">
+                                        <img src="img/close-ico-bookmarks.png" alt=""/>
+                                    </div>
+                                    <img src="img/bookmarks-img2.png" alt="...">
+                                    <div class="caption clearfix">
+                                        <h4>Bontempi</h4>
+                                        <span class="bookmarks-main__thumbnail-place pull-left">Restaurant, Moscow</span>
+                                        <span class="bookmarks-main__stars-rating-wrapper pull-right">
+                                            <span class="bookmarks-main__stars-rating__active"></span>
+                                            <span class="bookmarks-main__stars-rating__active"></span>
+                                            <span class="bookmarks-main__stars-rating__active"></span>
+                                            <span class="bookmarks-main__stars-rating__not-active"></span>
+                                            <span class="bookmarks-main__stars-rating__not-active"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-4 no-padding-left">
+                                <div class="thumbnail cabinet-shadow">
+                                    <div class="thumbnail-close pointer">
+                                        <img src="img/close-ico-bookmarks.png" alt=""/>
+                                    </div>
+                                    <img src="img/bookmarks-img3.png" alt="...">
+                                    <div class="caption clearfix">
+                                        <h4>Bontempi</h4>
+                                        <span class="bookmarks-main__thumbnail-place pull-left">Restaurant, Moscow</span>
+                                        <span class="bookmarks-main__stars-rating-wrapper pull-right">
+                                            <span class="bookmarks-main__stars-rating__active"></span>
+                                            <span class="bookmarks-main__stars-rating__active"></span>
+                                            <span class="bookmarks-main__stars-rating__active"></span>
+                                            <span class="bookmarks-main__stars-rating__not-active"></span>
+                                            <span class="bookmarks-main__stars-rating__not-active"></span>
+                                        </span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-xs-12 no-padding-left">
-                                <div class="messages-block cabinet-shadow">
-                                    <div class="message__avatar-wrapper">
-                                        <div class="message__block-avatar">
-                                            <span>img</span>
-                                        </div>
+                            <div class="col-xs-4 no-padding-left">
+                                <div class="thumbnail cabinet-shadow">
+                                    <div class="thumbnail-close pointer">
+                                        <img src="img/close-ico-bookmarks.png" alt=""/>
                                     </div>
-                                    <div class="message__block-content">
-                                        <div class="message__block-name">
-                                            <span>Amorgs and Mr & Mrs</span>
-                                            <span class="message__block-quantity-msg">
-                                                +
-                                                <span>1</span>
-                                                message
-                                            </span>
-                                        </div>
-                                        <div class="message__block-status">Offline</div>
-                                        <div class="clearfix">
-                                            <div class="message__block-message-text pull-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-                                            <span class="pull-right control__delete pointer"></span>
-                                        </div>
+                                    <img src="img/bookmarks-img1.png" alt="...">
+                                    <div class="caption clearfix">
+                                        <h4>Bontempi</h4>
+                                        <span class="bookmarks-main__thumbnail-place pull-left">Restaurant, Moscow</span>
+                                        <span class="bookmarks-main__stars-rating-wrapper pull-right">
+                                            <span class="bookmarks-main__stars-rating__active"></span>
+                                            <span class="bookmarks-main__stars-rating__active"></span>
+                                            <span class="bookmarks-main__stars-rating__active"></span>
+                                            <span class="bookmarks-main__stars-rating__not-active"></span>
+                                            <span class="bookmarks-main__stars-rating__not-active"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-4 no-padding-left">
+                                <div class="thumbnail cabinet-shadow">
+                                    <div class="thumbnail-close pointer">
+                                        <img src="img/close-ico-bookmarks.png" alt=""/>
+                                    </div>
+                                    <img src="img/bookmarks-img2.png" alt="...">
+                                    <div class="caption clearfix">
+                                        <h4>Bontempi</h4>
+                                        <span class="bookmarks-main__thumbnail-place pull-left">Restaurant, Moscow</span>
+                                        <span class="bookmarks-main__stars-rating-wrapper pull-right">
+                                            <span class="bookmarks-main__stars-rating__active"></span>
+                                            <span class="bookmarks-main__stars-rating__active"></span>
+                                            <span class="bookmarks-main__stars-rating__active"></span>
+                                            <span class="bookmarks-main__stars-rating__not-active"></span>
+                                            <span class="bookmarks-main__stars-rating__not-active"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-4 no-padding-left">
+                                <div class="thumbnail cabinet-shadow">
+                                    <div class="thumbnail-close pointer">
+                                        <img src="img/close-ico-bookmarks.png" alt=""/>
+                                    </div>
+                                    <img src="img/bookmarks-img3.png" alt="...">
+                                    <div class="caption clearfix">
+                                        <h4>Bontempi</h4>
+                                        <span class="bookmarks-main__thumbnail-place pull-left">Restaurant, Moscow</span>
+                                        <span class="bookmarks-main__stars-rating-wrapper pull-right">
+                                            <span class="bookmarks-main__stars-rating__active"></span>
+                                            <span class="bookmarks-main__stars-rating__active"></span>
+                                            <span class="bookmarks-main__stars-rating__active"></span>
+                                            <span class="bookmarks-main__stars-rating__not-active"></span>
+                                            <span class="bookmarks-main__stars-rating__not-active"></span>
+                                        </span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-xs-12 no-padding-left">
-                                <div class="messages-block cabinet-shadow">
-                                    <div class="message__avatar-wrapper">
-                                        <div class="message__block-avatar">
-                                            <span>img</span>
-                                        </div>
+                            <div class="col-xs-4 no-padding-left">
+                                <div class="thumbnail cabinet-shadow">
+                                    <div class="thumbnail-close pointer">
+                                        <img src="img/close-ico-bookmarks.png" alt=""/>
                                     </div>
-                                    <div class="message__block-content">
-                                        <div class="message__block-name">
-                                            <span>Amorgs and Mr & Mrs</span>
-                                            <span class="message__block-quantity-msg">
-                                                +
-                                                <span>1</span>
-                                                message
-                                            </span>
-                                        </div>
-                                        <div class="message__block-status">
-                                            <span>20.55</span>
-                                            <span>|</span>
-                                            <span>21.12.2015</span>
-                                        </div>
-                                        <div class="clearfix">
-                                            <div class="message__block-message-text pull-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-                                            <span class="pull-right control__delete pointer"></span>
-                                        </div>
+                                    <img src="img/bookmarks-img1.png" alt="...">
+                                    <div class="caption clearfix">
+                                        <h4>Bontempi</h4>
+                                        <span class="bookmarks-main__thumbnail-place pull-left">Restaurant, Moscow</span>
+                                        <span class="bookmarks-main__stars-rating-wrapper pull-right">
+                                            <span class="bookmarks-main__stars-rating__active"></span>
+                                            <span class="bookmarks-main__stars-rating__active"></span>
+                                            <span class="bookmarks-main__stars-rating__active"></span>
+                                            <span class="bookmarks-main__stars-rating__not-active"></span>
+                                            <span class="bookmarks-main__stars-rating__not-active"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-4 no-padding-left">
+                                <div class="thumbnail cabinet-shadow">
+                                    <div class="thumbnail-close pointer">
+                                        <img src="img/close-ico-bookmarks.png" alt=""/>
+                                    </div>
+                                    <img src="img/bookmarks-img2.png" alt="...">
+                                    <div class="caption clearfix">
+                                        <h4>Bontempi</h4>
+                                        <span class="bookmarks-main__thumbnail-place pull-left">Restaurant, Moscow</span>
+                                        <span class="bookmarks-main__stars-rating-wrapper pull-right">
+                                            <span class="bookmarks-main__stars-rating__active"></span>
+                                            <span class="bookmarks-main__stars-rating__active"></span>
+                                            <span class="bookmarks-main__stars-rating__active"></span>
+                                            <span class="bookmarks-main__stars-rating__not-active"></span>
+                                            <span class="bookmarks-main__stars-rating__not-active"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-4 no-padding-left">
+                                <div class="thumbnail cabinet-shadow">
+                                    <div class="thumbnail-close pointer">
+                                        <img src="img/close-ico-bookmarks.png" alt=""/>
+                                    </div>
+                                    <img src="img/bookmarks-img3.png" alt="...">
+                                    <div class="caption clearfix">
+                                        <h4>Bontempi</h4>
+                                        <span class="bookmarks-main__thumbnail-place pull-left">Restaurant, Moscow</span>
+                                        <span class="bookmarks-main__stars-rating-wrapper pull-right">
+                                            <span class="bookmarks-main__stars-rating__active"></span>
+                                            <span class="bookmarks-main__stars-rating__active"></span>
+                                            <span class="bookmarks-main__stars-rating__active"></span>
+                                            <span class="bookmarks-main__stars-rating__not-active"></span>
+                                            <span class="bookmarks-main__stars-rating__not-active"></span>
+                                        </span>
                                     </div>
                                 </div>
                             </div>
@@ -362,7 +489,8 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>/<!--End of modal Add new event-->
+
         <div class="modal fade modal__reset-password" id="modal__reset-password" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -380,6 +508,7 @@
                 </div>
             </div>
         </div>
+
     </main>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
