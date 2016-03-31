@@ -509,7 +509,7 @@ header.custom {
 .cabinet__main-statistic-space h4 {
     padding: 9px 0;
 }
-.cabinet__main-statistic-space__wrapper-block-graph {
+.statistic-space__wrapper-block-graph {
     position: relative;
     text-align: center;
 }
@@ -528,35 +528,35 @@ header.custom {
 .cabinet__main-statistic-space__wrapper-block__free-space {
     margin: 12px 0 25px;
 }
-.cabinet__main-statistic-space__wrapper-block__download-statistic > ul {
+.statistic-space__wrapper-block__download-statistic > ul {
     list-style: outside none none;
     padding: 0 22px;
 }
-.cabinet__main-statistic-space__wrapper-block__download-statistic > ul > li {
+.statistic-space__wrapper-block__download-statistic > ul > li {
     font-size: 12px;
     margin-bottom: 12px;
 }
-.cabinet__main-statistic-space__wrapper-block__download-statistic > ul > li > span:first-child {
+.statistic-space__wrapper-block__download-statistic > ul > li > span:first-child {
     border-radius: 50%;
     display: inline-block;
     height: 11px;
     margin-right: 10px;
     width: 11px;
 }
-.cabinet__main-statistic-space__wrapper-block__download-statistic span:nth-child(2) {
+.statistic-space__wrapper-block__download-statistic span:nth-child(2) {
     display: inline-block;
     width: 74%;
 }
-.cabinet__main-statistic-space__wrapper-block__download-statistic > ul > li.cabinet__main-statistic-space__wrapper-block__download-statistic-video > span:first-child {
+li.statistic-marker__dark-blue > span:first-child {
     background-color: #44b1d7;
 }
-.cabinet__main-statistic-space__wrapper-block__download-statistic > ul > li.cabinet__main-statistic-space__wrapper-block__download-statistic-audio > span:first-child {
+li.statistic-marker__medium-blue > span:first-child {
     background-color: #66caed;
 }
-.cabinet__main-statistic-space__wrapper-block__download-statistic > ul > li.cabinet__main-statistic-space__wrapper-block__download-statistic-photos > span:first-child {
+li.statistic--marker__light-blue > span:first-child {
     background-color: #96e4ff;
 }
-.cabinet__main-statistic-space__wrapper-block__download-statistic span:last-child {
+.statistic-space__wrapper-block__download-statistic span:last-child {
     text-align: right;
 }
 /*modal add event*/
@@ -1920,11 +1920,13 @@ textarea.edit-main__adress {
     color: #000;
     font-weight: 700;
 }
-.settings__icon-tariff__choose > a {
+.settings__icon-tariff__choose > a,
+.statistics__choose-tariff-link > a {
     color: #44b2d7;
     text-decoration: underline;
 }
-.settings__icon-tariff__choose > a:hover {
+.settings__icon-tariff__choose > a:hover,
+.statistics__choose-tariff-link > a:hover {
     text-decoration: none;
 }
 .btn__save-settings {
@@ -1933,6 +1935,81 @@ textarea.edit-main__adress {
     margin: 0 auto;
     padding: 15px 0;
     width: 205px;
+}
+/*statistics*/
+.statistics .row {
+    margin-bottom: 15px;
+}
+.statistics__wrapper {
+    background-color: #ffffff;
+    padding: 15px 25px;
+}
+.statistics__graph-header {
+    display: table;
+    height: 40px;
+    margin-bottom: 10px;
+    padding: 0 0 0 40px;
+    width: 100%;
+}
+.statistics__graph-header > div {
+    display: table-cell;
+    vertical-align: middle;
+}
+.statistics__graph-main > img {
+    width: 100%;
+}
+.statistic__graph-dropdown button {
+    background-color: #fcfcfc;
+    border: 1px solid #eff0f0;
+    color: #9a9a9a;
+    font-size: 12px;
+}
+.statistic__graph-dropdown button .caret {
+    margin-left: 8px;
+}
+.statistic__graph-dropdown .dropdown-menu {
+    border: 0 none;
+    border-radius: 0;
+    min-width: 134px;
+}
+.col-xs-6.statistics__wrapper {
+    width: 49%;
+}
+.statistics__graph-header.half {
+    padding-left: 15px;
+}
+.statistics__usage-space h4 {
+    color: #000000;
+    padding: 10px 0 30px;
+    text-align: center;
+}
+.statistics__wrapper .statistic-space__wrapper-block__download-statistic > ul {
+    list-style: outside none none;
+    padding: 0 0 0 20px;
+}
+li.statistic-marker__white > span:first-child {
+    background-color: #ffffff;
+    border: 1px solid #c3c3c3;
+}
+.statistic-space__wrapper-block__download-statistic .statistics-list span {
+    color: #000000;
+}
+.statistic-space__wrapper-block__download-statistic .statistics-list span:nth-child(2) {
+    width: auto;
+}
+.statistic-space__wrapper-block__download-statistic {
+    display: table;
+    height: 140px;
+}
+.statistic-space__wrapper-block__download-statistic > ul {
+    display: table-cell;
+    vertical-align: middle;
+}
+.statistics__choose-tariff-link {
+    padding-left: 20px;
+}
+.statistics__choose-tariff-link > a {
+    font-size: 12px;
 }
 
 
