@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'AvenirNextLTPro-Cn';
+    src: url('../fonts/AvenirNextLTPro-Cn.eot?#iefix') format('embedded-opentype'),  url('../fonts/AvenirNextLTPro-Cn.otf')  format('opentype'),
+    url('../fonts/AvenirNextLTPro-Cn.woff') format('woff'), url('../fonts/AvenirNextLTPro-Cn.ttf')  format('truetype'), url('../fonts/AvenirNextLTPro-Cn.svg#AvenirNextLTPro-Cn') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html, body {
     margin: 0;
     padding: 0;
@@ -2010,6 +2018,106 @@ li.statistic-marker__white > span:first-child {
 }
 .statistics__choose-tariff-link > a {
     font-size: 12px;
+}
+/*tariffs*/
+.tariff-wrapper {
+    background-color: #ffffff;
+    padding: 45px 20px 10px;
+}
+.tariff-wrapper:hover {
+    position: relative;
+    top: 1px;
+    -webkit-box-shadow: 1px 5px 10px 0 rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 1px 5px 10px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 5px 10px 0 rgba(0, 0, 0, 0.2);
+}
+.tariff-wrapper h3 {
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+.tariff__basic {
+    color: #44b2d7;
+}
+.tariff-price__block {
+    padding: 40px 0;
+    text-align: center;
+}
+.tariff-price__block > div {
+    display: inline-block;
+    color: #a3a3a3;
+    font-size: 21px;
+    vertical-align: top;
+}
+.tariff-price__block .tariff-price {
+    color: #000;
+    font-family: 'AvenirNextLTPro-Cn';
+    font-size: 77px;
+    margin-top: -9px;
+}
+.tariff-price__right-block > div {
+    text-align: left;
+}
+.tariff-price__right-block > div:last-child {
+    color: #000000;
+    font-size: 18px;
+    margin-top: 20px;
+    -moz-transform: skewX(-15deg);
+    -webkit-transform: skewX(-15deg);
+    transform: skewX(-15deg);
+}
+.tariff-info {
+    border-bottom: 1px solid #e8e8e8;
+    color: #000;
+    font-size: 11px;
+    line-height: 1.5;
+    padding-bottom: 40px;
+}
+.tariff-include {
+    border-bottom: 1px solid #e8e8e8;
+    color: #000000;
+    font-size: 12px;
+    padding: 40px 0;
+}
+.tariff-include .row:not(:last-child) {
+    margin-bottom: 15px;
+}
+.include-mark {
+    background-color: transparent;
+    background-image: url("../img/tariffs-sprite.png");
+    background-position: 0 -72px;
+    background-repeat: no-repeat;
+    height: 17px;
+    width: 17px;
+}
+.not-include .include-mark {
+    background-position: 0 0;
+}
+.not-include {
+    color: #727272;
+}
+.tariff__other {
+    color: #000;
+}
+.tariff-footer__basic {
+    color: #000000;
+    font-size: 12px;
+    padding: 30px 0 25px;
+}
+.tariff-footer__basic.text-center > span:last-child {
+    color: #44b2d7;
+    font-family: AvenirNextLTPro-Demi;
+}
+.tariff-footer__other.text-center > span {
+    border: 1px solid #44b2d7;
+    color: #44b2d7;
+    display: block;
+    font-size: 15px;
+    padding: 20px;
+    text-transform: uppercase;
+}
+.tariff-footer__other {
+    padding: 10px 0 0;
 }
 
 

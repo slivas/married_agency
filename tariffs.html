@@ -114,7 +114,7 @@
                     <li>
                         <a href="/messages.html" class="cabinet__users-menu__user-category-messages">Messages</a>
                     </li>
-                    <li class="active">
+                    <li>
                         <a href="/statistics.html" class="cabinet__users-menu__user-category-statistics">Statistics</a>
                     </li>
                     <li>
@@ -141,7 +141,7 @@
             <section class="cabinet__top-info-panel">
                 <ol class="breadcrumb">
                     <li><a href="#">Account </a></li>
-                    <li class="active">Statistics</li>
+                    <li class="active">Tariffs</li>
                 </ol>
                 <div class="cabinet__top-info-panel_disc-space">
                     <div class="cabinet__top-info-panel__disc-space__text-info">
@@ -184,131 +184,147 @@
             </section>
             <section class="cabinet__main">
                 <div class="row">
-                    <div class="col-xs-9 cabinet__main-content no-padding-left statistics">
+                    <div class="col-xs-9 cabinet__main-content no-padding-left tariffs">
                         <div class="cabinet__main__header clearfix">
-                            <h1>Statistics</h1>
+                            <h1>Tariffs</h1>
                         </div>
                         <div class="row">
-                            <div class="col-xs-12 statistics__wrapper cabinet-shadow">
-                                <div class="statistics__graph-header">
-                                    <div class="statistics__graph-header__name">Visitors</div>
-                                </div>
-                                <div class="statistics__graph-main">
-                                    <img src="../img/stat-graph.png" alt=""/>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xs-12 statistics__wrapper cabinet-shadow">
-                                <div class="statistics__graph-header clearfix">
-                                    <div class="statistics__graph-header__name">Add a page to bookmarks</div>
-                                    <div class="btn-group edit-main__type-price statistic__graph-dropdown pull-right cabinet-shadow">
-                                        <button data-toggle="dropdown" type="button" aria-expanded="false">
-                                            View for the year
-                                            <span class="caret"></span>
-                                        </button>
-                                        <ul role="menu" class="dropdown-menu">
-                                            <li><a href="#"></a></li>
-                                            <li><a href="#"></a></li>
-                                            <li><a href="#"></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="statistics__graph-main">
-                                    <img src="../img/stat-graph2.png" alt=""/>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xs-6 statistics__wrapper cabinet-shadow">
-                                <div class="statistics__graph-header clearfix">
-                                    <div class="statistics__graph-header__name">Orders</div>
-                                    <div class="btn-group edit-main__type-price statistic__graph-dropdown pull-right cabinet-shadow">
-                                        <button data-toggle="dropdown" type="button" aria-expanded="false">
-                                            View for the year
-                                            <span class="caret"></span>
-                                        </button>
-                                        <ul role="menu" class="dropdown-menu">
-                                            <li><a href="#"></a></li>
-                                            <li><a href="#"></a></li>
-                                            <li><a href="#"></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="statistics__graph-main">
-                                    <img src="../img/stat-graph3.png" alt=""/>
-                                </div>
-                            </div>
-                            <div class="col-xs-6 pull-right no-padding-right">
-                                <div class="row">
-                                    <div class="col-xs-12 statistics__wrapper cabinet-shadow">
-                                        <div class="statistics__graph-header half clearfix">
-                                            <div class="statistics__graph-header__name">Reviews</div>
-                                            <div class="btn-group edit-main__type-price statistic__graph-dropdown pull-right cabinet-shadow">
-                                                <button data-toggle="dropdown" type="button" aria-expanded="false">
-                                                    View for the year
-                                                    <span class="caret"></span>
-                                                </button>
-                                                <ul role="menu" class="dropdown-menu">
-                                                    <li><a href="#"></a></li>
-                                                    <li><a href="#"></a></li>
-                                                    <li><a href="#"></a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="statistics__graph-main">
-                                            <img src="../img/stat-graph4.png" alt=""/>
+                            <div class="col-xs-4 no-padding-left">
+                                <div class="tariff-wrapper cabinet-shadow">
+                                    <h3 class="tariff__basic">Basic</h3>
+                                    <div class="tariff-price__block">
+                                        <div>$</div>
+                                        <div class="tariff-price">9</div>
+                                        <div class="tariff-price__right-block">
+                                            <div>99</div>
+                                            <div>monthly</div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-xs-12 statistics__wrapper cabinet-shadow statistics__usage-space">
-                                        <h4>Usage statistics space</h4>
+                                    <div class="tariff-info text-center">
+                                        <div>Vestibulum ante sapien?</div>
+                                        <div>Tristique dignissim dolor ullam augue?</div>
+                                    </div>
+                                    <div class="tariff-include">
                                         <div class="row">
-                                            <div class="col-xs-6 statistic-space__wrapper-block-graph no-padding">
-                                                <img alt="" src="img/cabinet-circle-graph.png">
-                                                <div class="cabinet__main-statistic-space__wrapper-block__text-info">
-                                                    <div>5Gb</div>
-                                                    <div>Shared space</div>
-                                                </div>
-                                            </div>
-                                            <div class="col-xs-6 no-padding">
-                                                <div class="statistic-space__wrapper-block__download-statistic">
-                                                    <ul class="statistics-list">
-                                                        <li class="statistic-marker__dark-blue">
-                                                            <span></span>
-                                                            <span>Photos - </span>
-                                                            <span>52</span>
-                                                            <span>1.5 </span>
-                                                            <span>Gb</span>
-                                                        </li>
-                                                        <li class="statistic-marker__medium-blue">
-                                                            <span></span>
-                                                            <span>Videos - </span>
-                                                            <span>52</span>
-                                                            <span>1.5 </span>
-                                                            <span>Gb</span>
-                                                        </li>
-                                                        <li class="statistic--marker__light-blue">
-                                                            <span></span>
-                                                            <span>Audio - </span>
-                                                            <span>52</span>
-                                                            <span>1.5 </span>
-                                                            <span>Gb</span>
-                                                        </li>
-                                                        <li class="statistic-marker__white">
-                                                            <span></span>
-                                                            <span>Free space - </span>
-                                                            <span>0 </span>
-                                                            <span>Gb</span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="statistics__choose-tariff-link">
-                                                    <a href="/tariffs.html">Choose tariff</a>
-                                                </div>
-                                            </div>
+                                            <div class="pull-left">Lorem ipsum dolor</div>
+                                            <div class="include-mark pull-right"></div>
                                         </div>
+                                        <div class="row">
+                                            <div class="pull-left">Mauris tristique</div>
+                                            <div class="include-mark pull-right"></div>
+                                        </div>
+                                        <div class="row not-include">
+                                            <div class="pull-left">Proin sed lacinia</div>
+                                            <div class="include-mark pull-right"></div>
+                                        </div>
+                                        <div class="row not-include">
+                                            <div class="pull-left">Nullam augue mi</div>
+                                            <div class="include-mark pull-right"></div>
+                                        </div>
+                                        <div class="row not-include">
+                                            <div class="pull-left">Etiam pulvinar felis nec</div>
+                                            <div class="include-mark pull-right"></div>
+                                        </div>
+                                        <div class="row not-include">
+                                            <div class="pull-left">Phasellus sagittis</div>
+                                            <div class="include-mark pull-right"></div>
+                                        </div>
+                                    </div>
+                                    <div class="tariff-footer__basic text-center">
+                                        <span>Your package before </span>
+                                        <span >25.12.2015</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-4 no-padding-left">
+                                <div class="tariff-wrapper cabinet-shadow">
+                                    <h3 class="tariff__other">Plus</h3>
+                                    <div class="tariff-price__block">
+                                        <div>$</div>
+                                        <div class="tariff-price">59</div>
+                                        <div class="tariff-price__right-block">
+                                            <div>99</div>
+                                            <div>monthly</div>
+                                        </div>
+                                    </div>
+                                    <div class="tariff-info text-center">
+                                        <div>Vestibulum ante sapien?</div>
+                                        <div>Tristique dignissim dolor ullam augue?</div>
+                                    </div>
+                                    <div class="tariff-include">
+                                        <div class="row">
+                                            <div class="pull-left">Lorem ipsum dolor</div>
+                                            <div class="include-mark pull-right"></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="pull-left">Mauris tristique</div>
+                                            <div class="include-mark pull-right"></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="pull-left">Proin sed lacinia</div>
+                                            <div class="include-mark pull-right"></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="pull-left">Nullam augue mi</div>
+                                            <div class="include-mark pull-right"></div>
+                                        </div>
+                                        <div class="row not-include">
+                                            <div class="pull-left">Etiam pulvinar felis nec</div>
+                                            <div class="include-mark pull-right"></div>
+                                        </div>
+                                        <div class="row not-include">
+                                            <div class="pull-left">Phasellus sagittis</div>
+                                            <div class="include-mark pull-right"></div>
+                                        </div>
+                                    </div>
+                                    <div class="tariff-footer__other text-center pointer">
+                                        <span>Get Plus</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-4 no-padding-left">
+                                <div class="tariff-wrapper cabinet-shadow">
+                                    <h3 class="tariff__other">Premium</h3>
+                                    <div class="tariff-price__block">
+                                        <div>$</div>
+                                        <div class="tariff-price">99</div>
+                                        <div class="tariff-price__right-block">
+                                            <div>99</div>
+                                            <div>monthly</div>
+                                        </div>
+                                    </div>
+                                    <div class="tariff-info text-center">
+                                        <div>Vestibulum ante sapien?</div>
+                                        <div>Tristique dignissim dolor ullam augue?</div>
+                                    </div>
+                                    <div class="tariff-include">
+                                        <div class="row">
+                                            <div class="pull-left">Lorem ipsum dolor</div>
+                                            <div class="include-mark pull-right"></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="pull-left">Mauris tristique</div>
+                                            <div class="include-mark pull-right"></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="pull-left">Proin sed lacinia</div>
+                                            <div class="include-mark pull-right"></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="pull-left">Nullam augue mi</div>
+                                            <div class="include-mark pull-right"></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="pull-left">Etiam pulvinar felis nec</div>
+                                            <div class="include-mark pull-right"></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="pull-left">Phasellus sagittis</div>
+                                            <div class="include-mark pull-right"></div>
+                                        </div>
+                                    </div>
+                                    <div class="tariff-footer__other text-center pointer">
+                                        <span>Go Premium</span>
                                     </div>
                                 </div>
                             </div>
