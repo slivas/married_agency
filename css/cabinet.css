@@ -2008,6 +2008,7 @@ li.statistic-marker__white > span:first-child {
 .statistic-space__wrapper-block__download-statistic {
     display: table;
     height: 140px;
+    width: 100%;
 }
 .statistic-space__wrapper-block__download-statistic > ul {
     display: table-cell;
