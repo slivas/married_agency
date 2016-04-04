@@ -85,7 +85,7 @@
                 <section class="cabinet__users-menu__user-actions">
                     <ul>
                         <li>
-                            <a class="cabinet__users-menu__user-actions-edit" href="/edit.html">Edit personal page</a>
+                            <a class="cabinet__users-menu__user-actions-edit" href="edit.html">Edit personal page</a>
                         </li>
                         <li>
                             <a class="cabinet__users-menu__user-actions-transition" href="#">Go to your page</a>
@@ -95,37 +95,37 @@
                 <section class="cabinet__users-menu__user-categories">
                     <ul>
                         <li class="active">
-                            <a href="/dashboard.html" class="cabinet__users-menu__user-category-dashboard">Dashboard</a>
+                            <a href="dashboard.html" class="cabinet__users-menu__user-category-dashboard">Dashboard</a>
                         </li>
                         <li>
-                            <a href="/bookmarks.html" class="cabinet__users-menu__user-category-bookmarks">Bookmarks</a>
+                            <a href="bookmarks.html" class="cabinet__users-menu__user-category-bookmarks">Bookmarks</a>
                         </li>
                         <li class="dropdown">
                             <a data-toggle="dropdown" class="cabinet__users-menu__user-category-media" href="#">Media</a>
                             <ul class="dropdown-menu" role="menu">
-                                <li><a href="/audio.html">Audio</a></li>
-                                <li><a href="/video.html">Video</a></li>
-                                <li><a href="/photos.html">Photos</a></li>
+                                <li><a href="audio.html">Audio</a></li>
+                                <li><a href="video.html">Video</a></li>
+                                <li><a href="photos.html">Photos</a></li>
                             </ul>
                         </li>
                         <li>
-                            <a href="/notifications.html" class="cabinet__users-menu__user-category-notifications">Notifications</a>
+                            <a href="notifications.html" class="cabinet__users-menu__user-category-notifications">Notifications</a>
                         </li>
                         <li>
-                            <a href="/messages.html" class="cabinet__users-menu__user-category-messages">Messages</a>
+                            <a href="messages.html" class="cabinet__users-menu__user-category-messages">Messages</a>
                         </li>
                         <li>
-                            <a href="/statistics.html" class="cabinet__users-menu__user-category-statistics">Statistics</a>
+                            <a href="statistics.html" class="cabinet__users-menu__user-category-statistics">Statistics</a>
                         </li>
                         <li>
-                            <a href="/forum.html" class="cabinet__users-menu__user-category-forum">Forum</a>
+                            <a href="forum.html" class="cabinet__users-menu__user-category-forum">Forum</a>
                         </li>
                     </ul>
                 </section>
                 <section class="cabinet__users-menu__user-settings">
                     <ul>
                         <li>
-                            <a href="/settings.html" class="cabinet__users-menu__user-settings__settings">Settings</a>
+                            <a href="settings.html" class="cabinet__users-menu__user-settings__settings">Settings</a>
                         </li>
                         <li>
                             <a href="#" class="cabinet__users-menu__user-settings__reset-pass" data-target="#modal__reset-password" data-toggle="modal">Reset Password</a>
@@ -184,164 +184,178 @@
                 </section>
                 <section class="cabinet__main">
                     <div class="row">
-                        <div class="col-xs-9 cabinet__main-content no-padding">
+                        <div class="col-xs-9 cabinet__main-content">
+                            <div class="cabinet__main__header clearfix">
+                                <h1>Dashboard</h1>
+                            </div>
                             <div class="row">
-                                <div class="cabinet__main__header clearfix">
-                                    <h1>Dashboard</h1>
+                                <div class="col-xs-4 no-padding-left">
+                                    <ul class="cabinet__main__download-statistic">
+                                        <li class="cabinet__main__download-statistic__video cabinet-shadow">
+                                            <div>
+                                                <div>Downloaded</div>
+                                                <div>video</div>
+                                            </div>
+                                            <div>9</div>
+                                        </li>
+                                        <li class="cabinet__main__download-statistic__audio cabinet-shadow">
+                                            <div>
+                                                <div>Downloaded</div>
+                                                <div>audio</div>
+                                            </div>
+                                            <div>12</div>
+                                        </li>
+                                        <li class="cabinet__main__download-statistic__photos cabinet-shadow">
+                                            <div>
+                                                <div>Downloaded</div>
+                                                <div>photos</div>
+                                            </div>
+                                            <div>63</div>
+                                        </li>
+                                    </ul>
                                 </div>
-                                <ul class="cabinet__main__download-statistic">
-                                    <li class="cabinet__main__download-statistic__video cabinet-shadow">
-                                        <div>
-                                            <div>Downloaded</div>
-                                            <div>video</div>
-                                        </div>
-                                        <div>9</div>
-                                    </li>
-                                    <li class="cabinet__main__download-statistic__audio cabinet-shadow">
-                                        <div>
-                                            <div>Downloaded</div>
-                                            <div>audio</div>
-                                        </div>
-                                        <div>12</div>
-                                    </li>
-                                    <li class="cabinet__main__download-statistic__photos cabinet-shadow">
-                                        <div>
-                                            <div>Downloaded</div>
-                                            <div>photos</div>
-                                        </div>
-                                        <div>63</div>
-                                    </li>
-                                </ul>
-                                <div class="cabinet__main__graph">
-                                    <img class="cabinet-shadow" src="img/account-graph.jpg" alt=""/>
+                                <div class="col-xs-8 no-padding-left">
+                                    <div class="cabinet__main__graph">
+                                        <img class="cabinet-shadow" src="img/account-graph.jpg" alt=""/>
+                                    </div>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="cabinet__main-statistic-space cabinet-shadow">
-                                    <h4 class="text-center">Usage statistics <b>space</b></h4>
-                                    <div class="cabinet__main-statistic-space__wrapper">
-                                        <div class="cabinet__main-statistic-space__wrapper-block">
-                                            <div class="statistic-space__wrapper-block-graph">
-                                                <img src="img/cabinet-circle-graph.png" alt=""/>
-                                                <div class="cabinet__main-statistic-space__wrapper-block__text-info">
-                                                    <div>5Gb</div>
-                                                    <div>Shared space</div>
+                                <div class="col-xs-4 no-padding-left">
+                                    <div class="cabinet__main-statistic-space cabinet-shadow">
+                                        <h4 class="text-center">Usage statistics <b>space</b></h4>
+                                        <div class="cabinet__main-statistic-space__wrapper">
+                                            <div class="cabinet__main-statistic-space__wrapper-block">
+                                                <div class="statistic-space__wrapper-block-graph">
+                                                    <img src="img/cabinet-circle-graph.png" alt=""/>
+                                                    <div class="cabinet__main-statistic-space__wrapper-block__text-info">
+                                                        <div>5Gb</div>
+                                                        <div>Shared space</div>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="cabinet__main-statistic-space__wrapper-block__free-space text-center">
-                                            <span>Free space </span>
-                                            <span>1Gb</span>
-                                        </div>
-                                        <div class="statistic-space__wrapper-block__download-statistic">
-                                            <ul>
-                                                <li class="statistic-marker__dark-blue">
-                                                    <span></span>
-                                                    <span>Downloaded <b>video</b></span>
-                                                    <span>
-                                                        <span>1 </span>Gb
-                                                    </span>
-                                                </li>
-                                                <li class="statistic-marker__medium-blue">
-                                                    <span></span>
-                                                    <span>Downloaded <b>audio</b></span>
-                                                    <span>
-                                                        <span>2 </span>Gb
-                                                    </span>
-                                                </li>
-                                                <li class="statistic--marker__light-blue">
-                                                    <span></span>
-                                                    <span>Downloaded <b>photos</b></span>
-                                                    <span>
-                                                        <span>2 </span>Gb
-                                                    </span>
-                                                </li>
-                                            </ul>
+                                            <div class="cabinet__main-statistic-space__wrapper-block__free-space text-center">
+                                                <span>Free space </span>
+                                                <span>1Gb</span>
+                                            </div>
+                                            <div class="statistic-space__wrapper-block__download-statistic">
+                                                <ul>
+                                                    <li class="statistic-marker__dark-blue">
+                                                        <span></span>
+                                                        <span>Downloaded <b>video</b></span>
+                                                        <span>
+                                                            <span>1 </span>Gb
+                                                        </span>
+                                                    </li>
+                                                    <li class="statistic-marker__medium-blue">
+                                                        <span></span>
+                                                        <span>Downloaded <b>audio</b></span>
+                                                        <span>
+                                                            <span>2 </span>Gb
+                                                        </span>
+                                                    </li>
+                                                    <li class="statistic--marker__light-blue">
+                                                        <span></span>
+                                                        <span>Downloaded <b>photos</b></span>
+                                                        <span>
+                                                            <span>2 </span>Gb
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="cabinet__main__messages-wrapper cabinet-shadow">
-                                    <div class="cabinet__main__grey-header">
-                                        <div>Messages</div>
-                                        <div>Your new messages</div>
-                                    </div>
-                                    <div class="cabinet__main__messages__message-block">
-                                        <div class="cabinet__main__messages__message-avatar"></div>
-                                        <div class="cabinet__main__messages__message-name-status-block">
-                                            <div class="cabinet__main__messages__message-name-block">
-                                                Mr & Mrs Amor
-                                            </div>
-                                            <div class="cabinet__main__messages__message-status-block">
-                                                Online
-                                            </div>
-                                        </div>
-                                        <div class="cabinet__main__messages__message-content">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit...
-                                        </div>
-                                    </div>
-                                    <div class="cabinet__main__messages__message-block">
-                                        <div class="cabinet__main__messages__message-avatar"></div>
-                                        <div class="cabinet__main__messages__message-name-status-block">
-                                            <div class="cabinet__main__messages__message-name-block">
-                                                Mr & Mrs Amor
-                                            </div>
-                                            <div class="cabinet__main__messages__message-status-block">
-                                                Online
-                                            </div>
-                                        </div>
-                                        <div class="cabinet__main__messages__message-content">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit...
-                                        </div>
-                                    </div>
-                                    <div class="cabinet__main__messages__view-all">
-                                        <span class="view-all__btn pointer">View all</span>
-                                    </div>
-                                </div>
-                                <div class="cabinet__main__reviews-wrapper cabinet-shadow">
-                                    <div class="cabinet__main__grey-header">
-                                        <div>Reviews</div>
-                                        <div>New reviews portal</div>
-                                    </div>
-                                    <div class="cabinet__main__reviews-block">
-                                        <div class="cabinet__main__reviews-block-header">
-                                            <div>
-                                                <div  class="cabinet__main__reviews__name">Sarah Cooper</div>
-                                                <div class="cabinet__main__reviews__viewed-ico">
-                                                    <img src="img/viewed.png" alt=""/>
+                                <div class="col-xs-8 no-padding">
+                                    <div class="row">
+                                        <div class="col-xs-6 no-padding-left">
+                                            <div class="cabinet__main__messages-wrapper cabinet-shadow">
+                                                <div class="cabinet__main__grey-header">
+                                                    <div>Messages</div>
+                                                    <div>Your new messages</div>
+                                                </div>
+                                                <div class="cabinet__main__messages__message-block">
+                                                    <div class="cabinet__main__messages__message-avatar"></div>
+                                                    <div class="cabinet__main__messages__message-name-status-block">
+                                                        <div class="cabinet__main__messages__message-name-block">
+                                                            Mr & Mrs Amor
+                                                        </div>
+                                                        <div class="cabinet__main__messages__message-status-block">
+                                                            Online
+                                                        </div>
+                                                    </div>
+                                                    <div class="cabinet__main__messages__message-content">
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit...
+                                                    </div>
+                                                </div>
+                                                <div class="cabinet__main__messages__message-block">
+                                                    <div class="cabinet__main__messages__message-avatar"></div>
+                                                    <div class="cabinet__main__messages__message-name-status-block">
+                                                        <div class="cabinet__main__messages__message-name-block">
+                                                            Mr & Mrs Amor
+                                                        </div>
+                                                        <div class="cabinet__main__messages__message-status-block">
+                                                            Online
+                                                        </div>
+                                                    </div>
+                                                    <div class="cabinet__main__messages__message-content">
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit...
+                                                    </div>
+                                                </div>
+                                                <div class="cabinet__main__messages__view-all">
+                                                    <span class="view-all__btn pointer">View all</span>
                                                 </div>
                                             </div>
-                                            <div>20.12.2015</div>
                                         </div>
-                                        <div class="cabinet__main__messages__message-content">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit...
-                                        </div>
-                                    </div>
-                                    <div class="cabinet__main__reviews-block viewed">
-                                        <div class="cabinet__main__reviews-block-header">
-                                            <div>
-                                                <div  class="cabinet__main__reviews__name">Sarah Cooper</div>
-                                                <div class="cabinet__main__reviews__viewed-ico">
-                                                    <img src="img/viewed.png" alt=""/>
+                                        <div class="col-xs-6  no-padding-left pull-right">
+                                            <div class="cabinet__main__reviews-wrapper cabinet-shadow">
+                                                <div class="cabinet__main__grey-header">
+                                                    <div>Reviews</div>
+                                                    <div>New reviews portal</div>
+                                                </div>
+                                                <div class="cabinet__main__reviews-block">
+                                                    <div class="cabinet__main__reviews-block-header">
+                                                        <div>
+                                                            <div  class="cabinet__main__reviews__name">Sarah Cooper</div>
+                                                            <div class="cabinet__main__reviews__viewed-ico">
+                                                                <img src="img/viewed.png" alt=""/>
+                                                            </div>
+                                                        </div>
+                                                        <div>20.12.2015</div>
+                                                    </div>
+                                                    <div class="cabinet__main__messages__message-content">
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit...
+                                                    </div>
+                                                </div>
+                                                <div class="cabinet__main__reviews-block viewed">
+                                                    <div class="cabinet__main__reviews-block-header">
+                                                        <div>
+                                                            <div  class="cabinet__main__reviews__name">Sarah Cooper</div>
+                                                            <div class="cabinet__main__reviews__viewed-ico">
+                                                                <img src="img/viewed.png" alt=""/>
+                                                            </div>
+                                                        </div>
+                                                        <div>20.12.2015</div>
+                                                    </div>
+                                                    <div class="cabinet__main__messages__message-content">
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit...
+                                                    </div>
+                                                </div>
+                                                <div class="cabinet__main__reviews-block">
+                                                    <div class="cabinet__main__reviews-block-header">
+                                                        <div>
+                                                            <div  class="cabinet__main__reviews__name">Sarah Cooper</div>
+                                                            <div class="cabinet__main__reviews__viewed-ico">
+                                                                <img src="img/viewed.png" alt=""/>
+                                                            </div>
+                                                        </div>
+                                                        <div>20.12.2015</div>
+                                                    </div>
+                                                    <div class="cabinet__main__messages__message-content">
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit...
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div>20.12.2015</div>
-                                        </div>
-                                        <div class="cabinet__main__messages__message-content">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit...
-                                        </div>
-                                    </div>
-                                    <div class="cabinet__main__reviews-block">
-                                        <div class="cabinet__main__reviews-block-header">
-                                            <div>
-                                                <div  class="cabinet__main__reviews__name">Sarah Cooper</div>
-                                                <div class="cabinet__main__reviews__viewed-ico">
-                                                    <img src="img/viewed.png" alt=""/>
-                                                </div>
-                                            </div>
-                                            <div>20.12.2015</div>
-                                        </div>
-                                        <div class="cabinet__main__messages__message-content">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit...
                                         </div>
                                     </div>
                                 </div>

@@ -33,9 +33,9 @@ body {
     padding-left: 0 !important;
 }
 .cabinet-shadow {
-    -webkit-box-shadow: 1px 2px 2px 0 rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: 1px 2px 2px 0 rgba(0, 0, 0, 0.1);
-    box-shadow: 1px 2px 2px 0 rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
 }
 input:focus, button:focus, textarea:focus {
     outline: none;
@@ -414,6 +414,9 @@ header.custom {
 .cabinet__top-info-panel__tariff > span:last-child {
     margin-right: 15px;
 }
+.col-xs-9.cabinet__main-content {
+    padding: 0;
+}
 .cabinet__main {
     color: #626262;
     padding-left: 50px;
@@ -456,7 +459,7 @@ header.custom {
     list-style-type: none;
     margin-right: 20px;
     padding: 0;
-    width: 260px;
+    width: 100%;
 }
 .cabinet__main__download-statistic > li {
     background-color: #ffffff;
@@ -495,9 +498,13 @@ header.custom {
     background-position: -10px -160px;
 }
 .cabinet__main__graph {
-    display: inline-block;
-    vertical-align: top;
-    width: calc(100% - 300px);
+    /*display: inline-block;*/
+    /*vertical-align: top;*/
+    /*width: calc(100% - 300px);*/
+}
+.cabinet__main__graph > img {
+    height: 254px;
+    width: 100%;
 }
 .cabinet__right-column {
     top: 110px;
@@ -543,6 +550,7 @@ header.custom {
 .statistic-space__wrapper-block__download-statistic > ul > li {
     font-size: 12px;
     margin-bottom: 12px;
+    white-space: nowrap;
 }
 .statistic-space__wrapper-block__download-statistic > ul > li > span:first-child {
     border-radius: 50%;
@@ -2005,12 +2013,12 @@ li.statistic-marker__white > span:first-child {
 .statistic-space__wrapper-block__download-statistic .statistics-list span:nth-child(2) {
     width: auto;
 }
-.statistic-space__wrapper-block__download-statistic {
+.statistics .statistic-space__wrapper-block__download-statistic {
     display: table;
     height: 140px;
     width: 100%;
 }
-.statistic-space__wrapper-block__download-statistic > ul {
+.statistics .statistic-space__wrapper-block__download-statistic > ul {
     display: table-cell;
     vertical-align: middle;
 }
@@ -2175,9 +2183,9 @@ li.statistic-marker__white > span:first-child {
 .cabinet__main__reviews-wrapper {
     background-color: #ffffff;
     display: inline-block;
-    margin-right: 19px;
+    /*margin-right: 19px;*/
     vertical-align: top;
-    width: 30.8%;
+    /*width: 30.8%;*/
 }
 .cabinet__main__grey-header {
     background: #f3f3f3;
@@ -2248,6 +2256,9 @@ li.statistic-marker__white > span:first-child {
     font-size: 12px;
     text-align: center;
     vertical-align: middle;
+}
+.cabinet__main__reviews-block-header {
+    white-space: nowrap;
 }
 .cabinet__main__reviews-block-header > div {
     display: inline-block;
