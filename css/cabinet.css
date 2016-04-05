@@ -14,7 +14,7 @@ html, body {
 body {
     background-color: #626262;
     min-height: 100%;
-    min-width: 1200px;
+    min-width: 1280px;
 }
 .wrapper {
     height: 100%;
@@ -58,6 +58,9 @@ header.custom {
     -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+}
+.cabinet .header-menu {
+    padding: 0 25px;
 }
 .cabinet__users-menu {
     background-color: #626262;
@@ -1261,8 +1264,10 @@ textarea.edit-main__adress {
 .photos-main .control__delete {
     background-position: -35px 0;
 }
-.video-main .thumbnail {
+.video-main .thumbnail,
+.video-main__add-video {
     height: 262px;
+    width: 410px;
 }
 .video-main__add-photos__img {
     position: relative;
@@ -2346,4 +2351,27 @@ li.statistic-marker__white > span:first-child {
 .prev > span,
 .next > span {
     visibility: hidden;
+}
+@media screen and (max-width: 1910px) {
+    .cabinet__top-info-panel {
+        /*padding: 0 15px;*/
+    }
+    .cabinet__main {
+        /*padding-left: 15px;*/
+    }
+}
+@media screen and (max-width: 1310px) {
+    .cabinet__top-info-panel {
+        padding: 0 15px;
+    }
+    .cabinet__main {
+        padding-left: 15px;
+    }
+}
+@media screen and (max-width: 1439px) {
+    .video-main .thumbnail,
+    .video-main__add-video {
+        height: 262px;
+        width: 100%;
+    }
 }
