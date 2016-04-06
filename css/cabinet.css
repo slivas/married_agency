@@ -1267,7 +1267,7 @@ textarea.edit-main__adress {
 .video-main .thumbnail,
 .video-main__add-video {
     height: 262px;
-    width: 410px;
+    /*width: 410px;*/
 }
 .video-main__add-photos__img {
     position: relative;
@@ -1790,6 +1790,9 @@ textarea.edit-main__adress {
 .msg-sum > span {
     color: #79c753;
     font-size: 12px;
+}
+.message-chat__your-contacts__wrapper {
+    width: 345px;
 }
 .message-chat__your-contacts__wrapper .dropdown-menu::after {
     border-color: transparent transparent #ffffff;
@@ -2365,6 +2368,11 @@ li.statistic-marker__white > span:first-child {
         /*padding-left: 15px;*/
     }
 }
+@media screen and (max-width: 1760px) {
+    .message-chat__your-contacts__wrapper {
+        width: 308px;
+    }
+}
 @media screen and (max-width: 1750px) {
     .table-condensed > thead > tr > th,
     .table-condensed > tbody > tr > th,
@@ -2377,6 +2385,11 @@ li.statistic-marker__white > span:first-child {
     .calendar,
     .cabinet__main__events-wrapper {
         width: 312px;
+    }
+}
+@media screen and (max-width: 1680px) {
+    .message-chat__your-contacts__wrapper {
+        width: 286px;
     }
 }
 @media screen and (max-width: 1600px) {
@@ -2392,6 +2405,9 @@ li.statistic-marker__white > span:first-child {
     .cabinet__main__events-wrapper {
         width: 274px;
     }
+    .message-chat__your-contacts__wrapper {
+        width: 268px;
+    }
 }
 @media screen and (max-width: 1440px) {
     .table-condensed > thead > tr > th,
@@ -2402,11 +2418,13 @@ li.statistic-marker__white > span:first-child {
     .table-condensed > tfoot > tr > td {
         padding: 5px;
     }
-    .calendar, .cabinet__main__events-wrapper {
+    .calendar,
+    .cabinet__main__events-wrapper {
         width: 250px;
     }
-
-
+    .message-chat__your-contacts__wrapper {
+        width: 232px;
+    }
 }
 @media screen and (max-width: 1439px) {
     .video-main .thumbnail,
