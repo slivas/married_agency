@@ -225,7 +225,8 @@ header.custom {
 .cabinet__users-menu__user-settings__settings {
     background: rgba(0, 0, 0, 0) url("../img/cabinet-users-menu-actions-sprite.png") no-repeat scroll 6px -450px;
 }
-.cabinet__users-menu__user-settings__settings:hover {
+.cabinet__users-menu__user-settings__settings:hover,
+.cabinet__users-menu__user-settings li.active .cabinet__users-menu__user-settings__settings {
     background-position: 6px -478px;
 }
 .cabinet__users-menu__user-settings__reset-pass {
@@ -1487,14 +1488,15 @@ textarea.edit-main__adress {
     width: calc(100% - 100px);
 }
 .message__block-quantity-msg,
-.message-chat__user-info > div:nth-child(3) {
+.message-chat__user-info > div:nth-child(3),
+.message__block-quantity-msg > a {
     color: #44b1d7;
     font-size: 12px;
 }
 .message__block-name {
     line-height: 1.5;
 }
-.message__block-name > span:first-child {
+.message__block-name > a:first-child {
     color: #000;
     margin-right: 30px;
 }
