@@ -50,7 +50,7 @@ main > * {
 main.cabinet__content {
     background-color: #f5f7f8;
     height: 100%;
-    min-height: 877px;
+    min-height: 950px;
     /*min-height: 100%;*/
     padding-top: 55px;
 }
@@ -2398,6 +2398,9 @@ li.statistic-marker__white > span:first-child {
     .cabinet__main__events-wrapper {
         width: 312px;
     }
+    main.cabinet__content {
+        min-height: 890px;
+    }
 }
 @media screen and (max-width: 1680px) {
     .message-chat__your-contacts__wrapper {
@@ -2440,6 +2443,9 @@ li.statistic-marker__white > span:first-child {
     .video-main .col-xs-6 {
         width: 50%;
     }
+    .video-main__add-photos__img > img {
+        width: 100%;
+    }
 }
 @media screen and (max-width: 1439px) {
     .video-main .thumbnail,
@@ -2448,6 +2454,11 @@ li.statistic-marker__white > span:first-child {
         width: 100%;
     }
 }
+@media screen and (max-width: 1415px) {
+.video-main__add-photos__img > img {
+    width: auto;
+}
+
 @media screen and (max-width: 1310px) {
     .cabinet__top-info-panel {
         padding: 0 15px;
