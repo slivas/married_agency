@@ -2455,10 +2455,18 @@ li.statistic-marker__white > span:first-child {
     }
 }
 @media screen and (max-width: 1415px) {
-.video-main__add-photos__img > img {
-    width: auto;
+    .video-main__add-photos__img > img {
+        width: auto;
+    }
 }
-
+@media screen and (max-width: 1350px) {
+    .cabinet__photos .cabinet__main__header__search-wrapper {
+        width: 240px;
+    }
+    .cabinet__photos .cabinet__main__header__search {
+        width: 185px;
+    }
+}
 @media screen and (max-width: 1310px) {
     .cabinet__top-info-panel {
         padding: 0 15px;
