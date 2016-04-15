@@ -591,6 +591,7 @@ li.statistic--marker__light-blue > span:first-child {
 }
 .modal-header h3 {
     font-weight: 100;
+    margin-bottom: 21px;
 }
 .modal__add-event .modal-dialog {
     font-size: 12px;
